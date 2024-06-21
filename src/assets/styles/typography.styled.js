@@ -22,5 +22,16 @@ export const Text = styled.p`
     font-family: var(--font-family-helvetica);
     font-size: var(--font-size-h6);
     line-height: var(--spacing-200);
+`;
+  
+export const Label = styled.label`
+    font-family: var(--font-family-grifter);
+    font-size: var(--font-size-label10);
+    line-height: var(--spacing-160);
+
+    letter-spacing: 4px;
+
+    font-size: ${props => (props.primary ? 'var(--font-size-label15)' : 'inherit')};
+
 `; 
 
