@@ -1,0 +1,21 @@
+@import './variables.css';
+
+@font-face {
+    font-family: 'Grifter';
+    src: url('../../fonts/GRIFTER-BOLD.OTF') format('otf');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../../fonts/HELVETICA-01.TTF') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+h1 {
+    font-family: var(--font-family-grifter);
+    font-size: var(--font-size-h1);
+    line-height: var(--spacing-100);
+}

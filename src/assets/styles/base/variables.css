@@ -1,0 +1,30 @@
+@import './typography.css';
+
+:root {
+    /* Cores */
+    --color-primary: #0590FA;
+    --color-secondary: #0567F8;
+    --color-tertiary: #0A33F1;
+    --color-error: #F85C5C;
+
+    /* Fontes */
+    --font-family-grifter: 'Grifter', sans-serif;
+    --font-family-helvetica: 'Helvetica', sans-serif;
+  
+    /* Tamanhos de Fonte */
+    --font-size-h1: 160px;
+    --font-size-h2: 100px;
+    --font-size-h3: 50px;
+    --font-size-h4: 45px;
+    --font-size-h5: 40px;
+    --font-size-h6: 20;
+    --font-size-h7: 20px;
+  
+    /* Espaçamentos */
+    --spacing-200: 200%;
+    --spacing-160: 160%;
+    --spacing-100: 100%;
+    --spacing-90: 90%;
+
+  }
+
