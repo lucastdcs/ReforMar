@@ -1,17 +1,18 @@
 import React from "react";
-import Logo from '../../assets/icons/Logotipo.svg';
+import Logo from "../../assets/icons/Logotipo.svg";
+import StyledHeader from "./Header.styled.js";
 
 const Header = () => {
-    return (
-      <Header>
-        <img src={Logo} alt="" />
-        <nav>
-          <a href="/">Sobre Nós</a>
-          <a href="/sobre">Serviços</a>
-          <a href="/contato">Portfólio</a>
-        </nav>
-      </Header>
-    );
-  };
-  
-  export default Header;
+  return (
+    <StyledHeader>
+      <img src={Logo} alt="Logotipo" />
+      <nav>
+        <a href="/">Sobre Nós</a>
+        <a href="/servicos">Serviços</a>
+        <a href="/portfolio">Portfólio</a>
+      </nav>
+    </StyledHeader>
+  );
+};
+
+export default Header;

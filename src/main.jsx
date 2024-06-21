@@ -1,21 +1,20 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'; // Importações corretas do react-router-dom
+import './index.css';
 
 import Inicio from './Pages/Início.jsx';
 
-
+// Configuração das rotas usando createBrowserRouter
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Inicio />,
-
-    children:[],
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+// Renderizando o aplicativo
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
