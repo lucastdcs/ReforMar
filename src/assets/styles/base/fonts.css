@@ -13,9 +13,3 @@
     font-weight: normal;
     font-style: normal;
   }
-
-h1 {
-    font-family: var(--font-family-grifter);
-    font-size: var(--font-size-h1);
-    line-height: var(--spacing-100);
-}
