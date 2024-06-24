@@ -5,7 +5,7 @@ import { Label } from "../../assets/styles/typography.styled.js";
 import instagram from "../../assets/icons/instagram.svg";
 import whatsapp from "../../assets/icons/whatsapp.svg";
 import youtube from "../../assets/icons/youtube.svg";
-
+import Button from "../Button/Button.jsx";
 const Header = () => {
   return (
     <StyledHeader>
@@ -28,6 +28,7 @@ const Header = () => {
         <Label>Serviços</Label>
         <Label>Portfólio</Label>
         <Label>Contatos</Label>
+        <Button></Button>
       </nav>
     </StyledHeader>
   );
