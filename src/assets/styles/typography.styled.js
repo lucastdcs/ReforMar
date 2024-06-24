@@ -28,6 +28,7 @@ export const Label = styled.label`
     font-family: var(--font-family-grifter);
     font-size: var(--font-size-label10);
     line-height: var(--spacing-160);
+    text-transform: uppercase;
 
     letter-spacing: 4px;
 

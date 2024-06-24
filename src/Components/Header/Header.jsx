@@ -1,15 +1,33 @@
 import React from "react";
 import Logo from "../../assets/icons/Logotipo.svg";
 import StyledHeader from "./Header.styled.js";
+import { Label } from "../../assets/styles/typography.styled.js";
+import instagram from "../../assets/icons/instagram.svg";
+import whatsapp from "../../assets/icons/whatsapp.svg";
+import youtube from "../../assets/icons/youtube.svg";
 
 const Header = () => {
   return (
     <StyledHeader>
-      <img src={Logo} alt="Logotipo" />
+      <div className="wrapper">
+        <img src={Logo} alt="Logotipo" />
+        <span>
+          <a href="">
+            <img src={instagram} alt="" />
+          </a>
+          <a href="">
+            <img src={youtube} alt="" />
+          </a>
+          <a href="">
+            <img src={whatsapp} alt="" />
+          </a>
+        </span>
+      </div>
       <nav>
-        <a href="/">Sobre Nós</a>
-        <a href="/servicos">Serviços</a>
-        <a href="/portfolio">Portfólio</a>
+        <Label>Sobre Nós</Label>
+        <Label>Serviços</Label>
+        <Label>Portfólio</Label>
+        <Label>Contatos</Label>
       </nav>
     </StyledHeader>
   );
