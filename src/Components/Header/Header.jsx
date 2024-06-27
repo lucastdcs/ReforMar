@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../../assets/icons/Logotipo.svg";
+import LogoPequeno from "../../assets/icons/LogotipoSmall.svg";
 import StyledHeader from "./Header.styled.js";
 import { Label } from "../../assets/styles/typography.styled.js";
 import instagram from "../../assets/icons/instagram.svg";
@@ -11,7 +12,8 @@ const Header = () => {
   return (
     <StyledHeader>
       <div className="wrapper">
-        <img src={Logo} alt="Logotipo" />
+        <img src={Logo} alt="Logotipo" id="logo"/>
+        <img src={LogoPequeno} alt="Logotipo" id="logo_pequeno"/>
         <span>
           <a href="">
             <img src={instagram} alt="" />
@@ -31,7 +33,7 @@ const Header = () => {
           <Label>Portfólio</Label>
           <Label>Contatos</Label>
         </nav>
-        <Button texto="Entre em contato" />
+        <Button texto="Entre em contato"/>
       </div>
     </StyledHeader>
   );

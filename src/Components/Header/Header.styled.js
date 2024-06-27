@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 
 const StyledHeader = styled.header`
-    width: 90%;
+    max-width: 192rem;
+    width: 100vw;
     height: auto;
     padding: 4rem;
-    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 15%;
+    justify-content: center;
+    gap: 15vw;
 
     .wrapper {
         width: 20%;
@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 15%;
+        gap: 5rem;
     }
 
     .wrapper2 {
@@ -29,7 +29,7 @@ const StyledHeader = styled.header`
 
     span {
         display: flex;
-        gap: 4rem;
+        gap: 3rem;
         height: 1.5rem;
     }
 
@@ -38,15 +38,21 @@ const StyledHeader = styled.header`
         height: min-content;
     }
 
-    img {
+    #logo {
         max-height: 6rem;
-    }
+        max-width: 100%; /* Ajusta o logo ao contêiner pai */
+        width: 15vw; /* Ajusta o logo de acordo com a largura da viewport */
+  }
+
+  #logo_pequeno{
+    display: none;
+  }
 
     nav {
         max-width: 56rem;
         display: flex;
         /* justify-content: space-between; */
-        gap: 7.2rem;
+        gap: 2vw;
     }
 
     nav a {
@@ -56,6 +62,43 @@ const StyledHeader = styled.header`
     nav label{
         font-weight: lighter;
     }
+
+    @media (max-width: 1800px) {
+        .wrapper {
+        gap: 5rem;
+    }
+        .wrapper2 {
+        gap: 5rem;
+    }
+
+    #logo {
+        max-height: 6rem;
+        max-width: 100%; /* Ajusta o logo ao contêiner pai */
+        width: 13vw; /* Ajusta o logo de acordo com a largura da viewport */
+    }
+  }
+    @media (max-width: 1300px) {
+        .wrapper2 nav a {
+            font-size: var(--font-size-label10);
+        }
+
+        #logo_pequeno{
+            display: block;
+        }
+
+        #logo{
+            display: none;
+        }
+  }
+    @media (max-width: 1060px) {
+
+        button {
+            display: none;
+        }
+
+
+    }
+  
 
 `;
 
