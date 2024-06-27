@@ -9,12 +9,22 @@ const StyledHeader = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 15%;
 
     .wrapper {
+        width: 20%;
+        max-width: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 150px;
+        gap: 15%;
+    }
+
+    .wrapper2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
     }
 
     span {
@@ -33,15 +43,18 @@ const StyledHeader = styled.header`
     }
 
     nav {
-        width: 100%;
         max-width: 560px;
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
+        gap: 72px;
     }
 
     nav a {
         text-decoration: none;
+    }
 
+    nav label{
+        font-weight: lighter;
     }
 
 `;

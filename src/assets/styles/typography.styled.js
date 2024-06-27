@@ -29,10 +29,11 @@ export const Label = styled.label`
     font-size: var(--font-size-label10);
     line-height: var(--spacing-160);
     text-transform: uppercase;
+    white-space: nowrap;
 
     letter-spacing: 4px;
 
-    font-size: ${props => (props.primary ? 'var(--font-size-label15)' : 'inherit')};
+    font-size: ${props => (props.primary ? 'var(--font-size-label15)' : 'var(--font-size-label10)')};
 
 `; 
 

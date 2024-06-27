@@ -24,13 +24,15 @@ const Header = () => {
           </a>
         </span>
       </div>
-      <nav>
-        <Label>Sobre Nós</Label>
-        <Label>Serviços</Label>
-        <Label>Portfólio</Label>
-        <Label>Contatos</Label>
-        <Button texto="Entre em contato"/>
-      </nav>
+      <div className="wrapper2">
+        <nav>
+          <Label>Sobre Nós</Label>
+          <Label>Serviços</Label>
+          <Label>Portfólio</Label>
+          <Label>Contatos</Label>
+        </nav>
+        <Button texto="Entre em contato" />
+      </div>
     </StyledHeader>
   );
 };
