@@ -12,14 +12,14 @@
     --font-family-helvetica: 'Helvetica', sans-serif;
   
     /* Tamanhos de Fonte */
-    --font-size-h1: 160px;
-    --font-size-h2: 100px;
-    --font-size-h3: 50px;
-    --font-size-h4: 45px;
-    --font-size-h5: 40px;
-    --font-size-h6: 20px;
-    --font-size-label15: 15px;
-    --font-size-label10: 10px;
+    --font-size-h1: 16rem;
+    --font-size-h2: 10rem;
+    --font-size-h3: 5rem;
+    --font-size-h4: 4.5rem;
+    --font-size-h5: 4rem;
+    --font-size-h6: 2rem;
+    --font-size-label15: 1.5rem;
+    --font-size-label10: 1rem;
   
     /* Espaçamentos */
     --spacing-200: 200%;

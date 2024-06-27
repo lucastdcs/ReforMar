@@ -31,7 +31,7 @@ export const Label = styled.label`
     text-transform: uppercase;
     white-space: nowrap;
 
-    letter-spacing: 4px;
+    letter-spacing: 0.4rem;
 
     font-size: ${props => (props.primary ? 'var(--font-size-label15)' : 'var(--font-size-label10)')};
 

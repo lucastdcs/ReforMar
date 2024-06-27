@@ -4,7 +4,7 @@ import styled from "styled-components";
 const StyledHeader = styled.header`
     width: 90%;
     height: auto;
-    padding: 40px;
+    padding: 4rem;
     margin: auto;
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@ const StyledHeader = styled.header`
 
     .wrapper {
         width: 20%;
-        max-width: 500px;
+        max-width: 50rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -24,13 +24,13 @@ const StyledHeader = styled.header`
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 100px;
+        gap: 10rem;
     }
 
     span {
         display: flex;
-        gap: 40px;
-        height: 15px;
+        gap: 4rem;
+        height: 1.5rem;
     }
 
     span a{
@@ -39,14 +39,14 @@ const StyledHeader = styled.header`
     }
 
     img {
-        max-height: 60px;
+        max-height: 6rem;
     }
 
     nav {
-        max-width: 560px;
+        max-width: 56rem;
         display: flex;
         /* justify-content: space-between; */
-        gap: 72px;
+        gap: 7.2rem;
     }
 
     nav a {
