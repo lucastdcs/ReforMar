@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import backArrow from "../../assets/icons/navigate_before.svg"
+
 
 
 const StyledHeader = styled.header`
@@ -60,9 +62,10 @@ const StyledHeader = styled.header`
         text-decoration: none;
     }
 
-    nav label{
-        font-weight: lighter;
-    }
+
+    #nav_menu{
+            display: none;
+        }
 
     @media (max-width: 1800px) {
         .wrapper {
@@ -109,7 +112,6 @@ export const StyledNav = styled.nav`
     max-width: 56rem;
     display: flex;
 
-
     ul {
         display: flex;
         gap: 2vw;
@@ -132,19 +134,20 @@ export const StyledNav = styled.nav`
         z-index: 1;
 
         &::before{
+            display: none;
             content: "";
             position: fixed;
             top: 0;
             left: 0;
             width: 100vw;
             height: 100vh;
-
             z-index: -1;
             opacity: 0;
             transition: opacity 0.3s ease;
         }
 
         &.active::before {
+            display: block;
             opacity: 1;
         }
 
@@ -153,6 +156,23 @@ export const StyledNav = styled.nav`
             flex-direction: column;
         }
 
+        .back-arrow {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 24px; /* Ajuste o tamanho conforme necessário */
+            height: 24px; /* Ajuste o tamanho conforme necessário */
+            background: url(${backArrow}) no-repeat center center;
+            background-size: contain;
+            z-index: 2;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            cursor: pointer;
+        }
+
+        &.active .back-arrow {
+            opacity: 1;
+        }
         ul {
             list-style: none;
             padding: 0;
@@ -172,19 +192,19 @@ export const StyledNav = styled.nav`
             transition: transform 0.3s ease;
         }
 
+
 }
 `;
 
 export const StyledNavButton = styled.button` 
 
-background: none;
+  background: none;
   border: none;
   cursor: pointer;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-
 
 `;
 export default StyledHeader;

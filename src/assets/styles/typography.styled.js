@@ -65,6 +65,8 @@ export const Label = styled.a`
 
     letter-spacing: 0.4rem;
 
+    cursor: pointer;
+
     font-size: ${props => (props.primary ? 'var(--font-size-label15)' : 'var(--font-size-label10)')};
 
     @media (max-width: 768px) {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../assets/icons/Logotipo.svg";
 import LogoPequeno from "../../assets/icons/LogotipoSmall.svg";
 import StyledHeader from "./Header.styled.js";
@@ -12,6 +12,16 @@ import menu from "../../assets/icons/Nav-Menu.svg"
 import Button from "../Button/Button.jsx";
 
 const Header = () => {
+
+  const [menuActive, setMenuActive] = useState(false)
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive)
+  }
+
+  const closeMenu = () => {
+    setMenuActive(false);
+  };
   return (
     <StyledHeader>
       <div className="wrapper">
@@ -30,7 +40,8 @@ const Header = () => {
         </span>
       </div>
       <div className="wrapper2">
-        <StyledNav className="">
+        <StyledNav className={menuActive ? "active" : ""}>
+        <div className="back-arrow" onClick={closeMenu}></div>
           <ul>
             <li>
               <Label>Sobre Nós</Label>
@@ -47,7 +58,7 @@ const Header = () => {
           </ul>
         </StyledNav>
         <Button texto="Entre em contato" />
-        <StyledNavButton id="nav_menu">
+        <StyledNavButton id="nav_menu" onClick={toggleMenu}>
           <img src={menu} alt="" />
         </StyledNavButton>
       </div>

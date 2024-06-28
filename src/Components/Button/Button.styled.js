@@ -17,6 +17,8 @@ const StyledButton = styled.button`
     font-family: var(--font-family-grifter);
     color: inherit;
 
+    cursor: pointer;
+
 `;
 
 export default StyledButton
