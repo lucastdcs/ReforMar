@@ -48,6 +48,7 @@ const StyledHeader = styled.header`
     display: none;
   }
 
+
     nav {
         max-width: 56rem;
         display: flex;
@@ -92,8 +93,11 @@ const StyledHeader = styled.header`
   }
     @media (max-width: 1060px) {
 
-        button {
+        #btn_contact {
             display: none;
+        }
+        #nav_menu{
+            display: block;
         }
 
     }
@@ -123,7 +127,6 @@ export const StyledNav = styled.nav`
 
 
     @media (max-width: 1060px) {
-        flex-direction: column;
 
         position:relative;
         z-index: 1;
@@ -135,19 +138,53 @@ export const StyledNav = styled.nav`
             left: 0;
             width: 100vw;
             height: 100vh;
-            background-color: rgba(0, 0, 0, 0.8);
+
             z-index: -1;
             opacity: 0;
             transition: opacity 0.3s ease;
         }
 
         &.active::before {
-    opacity: 1;
-  }
+            opacity: 1;
+        }
 
-        
+        &.active ul {
+            transform: translateX(0);
+            flex-direction: column;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
 
 }
 `;
 
+export const StyledNavButton = styled.button` 
+
+background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+`;
 export default StyledHeader;

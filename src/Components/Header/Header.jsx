@@ -3,10 +3,12 @@ import Logo from "../../assets/icons/Logotipo.svg";
 import LogoPequeno from "../../assets/icons/LogotipoSmall.svg";
 import StyledHeader from "./Header.styled.js";
 import { StyledNav } from "./Header.styled.js";
+import { StyledNavButton } from "./Header.styled.js";
 import { Label } from "../../assets/styles/typography.styled.js";
 import instagram from "../../assets/icons/instagram.svg";
 import whatsapp from "../../assets/icons/whatsapp.svg";
 import youtube from "../../assets/icons/youtube.svg";
+import menu from "../../assets/icons/Nav-Menu.svg"
 import Button from "../Button/Button.jsx";
 
 const Header = () => {
@@ -28,7 +30,7 @@ const Header = () => {
         </span>
       </div>
       <div className="wrapper2">
-        <StyledNav className="active">
+        <StyledNav className="">
           <ul>
             <li>
               <Label>Sobre Nós</Label>
@@ -45,6 +47,9 @@ const Header = () => {
           </ul>
         </StyledNav>
         <Button texto="Entre em contato" />
+        <StyledNavButton id="nav_menu">
+          <img src={menu} alt="" />
+        </StyledNavButton>
       </div>
     </StyledHeader>
   );
