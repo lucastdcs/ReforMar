@@ -96,10 +96,23 @@ const StyledHeader = styled.header`
             display: none;
         }
 
-
     }
   
 
 `;
 
-export default StyledHeader
+export const StyledNav = styled.nav`
+        max-width: 56rem;
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 2vw;
+        nav a {
+        text-decoration: none;
+    }
+
+    nav label{
+        font-weight: lighter;
+    }
+`;
+
+export default StyledHeader;
