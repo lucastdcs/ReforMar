@@ -28,11 +28,21 @@ const Header = () => {
         </span>
       </div>
       <div className="wrapper2">
-        <StyledNav>
-          <Label>Sobre Nós</Label>
-          <Label>Serviços</Label>
-          <Label>Portfólio</Label>
-          <Label>Contatos</Label>
+        <StyledNav className="active">
+          <ul>
+            <li>
+              <Label>Sobre Nós</Label>
+            </li>
+            <li>
+              <Label>Serviços</Label>
+            </li>
+            <li>
+              <Label>Portfólio</Label>
+            </li>
+            <li>
+              <Label>Contatos</Label>
+            </li>
+          </ul>
         </StyledNav>
         <Button texto="Entre em contato" />
       </div>

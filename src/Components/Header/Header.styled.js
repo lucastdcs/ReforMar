@@ -102,17 +102,52 @@ const StyledHeader = styled.header`
 `;
 
 export const StyledNav = styled.nav`
-        max-width: 56rem;
+    max-width: 56rem;
+    display: flex;
+
+
+    ul {
         display: flex;
-        /* justify-content: space-between; */
         gap: 2vw;
-        nav a {
+        margin: 0;
+        padding:0;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+   a {
         text-decoration: none;
     }
 
-    nav label{
-        font-weight: lighter;
-    }
+
+    @media (max-width: 1060px) {
+        flex-direction: column;
+
+        position:relative;
+        z-index: 1;
+
+        &::before{
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        &.active::before {
+    opacity: 1;
+  }
+
+        
+
+}
 `;
 
 export default StyledHeader;
