@@ -4,6 +4,7 @@ import backArrow from "../../assets/icons/navigate_before.svg"
 
 
 const StyledHeader = styled.header`
+  position: fixed;
   max-width: 192rem;
   width: 100%;
   height: auto;
@@ -12,6 +13,7 @@ const StyledHeader = styled.header`
   align-items: center;
   justify-content: center;
   gap: 15vw;
+  z-index: 10;
 
   .wrapper {
     width: 20%;
