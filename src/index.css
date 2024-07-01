@@ -34,3 +34,16 @@ body {
   height: 100vh; /* Garante que ocupe toda a altura da viewport, ajuste conforme necessário */
 }
 
+/* @media (max-width: 1060px) {
+  h2 {
+    font-size: var(--font-size-mh2);
+  }
+  
+  p {
+    font-size: var( --font-size-mp);
+  }
+
+  button {
+    font-size: var(--font-size-mbutton);
+  }
+} */

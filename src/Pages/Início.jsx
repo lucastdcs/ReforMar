@@ -5,6 +5,7 @@ import backgroundImg from "../assets/imgs/Hero-Img.png";
 import { H2 } from "../assets/styles/typography.styled.js";
 import { Text } from "../assets/styles/typography.styled.js";
 import Button from "../Components/Button/Button.jsx";
+
 const Inicio = () => {
   const StyledContainer = styled.div`
     position: relative;
@@ -31,6 +32,15 @@ const Inicio = () => {
       margin: 4rem 0 6rem 0;
     }
 
+    @media (max-width: 1060px) {
+      p {
+      margin: 2rem 0 4rem 0;
+    }
+    }
+    @media (max-width: 480px) {
+      background-position: 70% center;
+
+    }
   `;
 
   const ContentWrapper = styled.div`
@@ -39,12 +49,16 @@ const Inicio = () => {
     margin-left: 15vw; /* Ajusta a margem esquerda com base na largura da viewport */
     max-width: 64rem; /* Define a largura máxima do conteúdo */
     padding: 0 2rem; /* Adiciona algum espaçamento lateral conforme necessário */
+
+    @media (max-width: 480px) {
+      margin-top: 60vh;
+      margin-left: 5vw;
+    }
   `;
 
   return (
     <StyledContainer>
       <Header />
-
       <ContentWrapper>
         <H2>
           Transforme seu <span>espaço</span>
