@@ -20,6 +20,19 @@
     --font-size-h6: 2rem;
     --font-size-label15: 1.5rem;
     --font-size-label10: 1rem;
+
+    /* Tamanhos de Fonte Mobile */
+    --font-size-mh1: 8rem;
+    --font-size-mh2: 5rem;
+    --font-size-mh3: 2.6rem;
+    --font-size-mh4: 2.2rem;
+    --font-size-mh5: 2rem;
+    --font-size-mh6: 1.8rem;
+    --font-size-mh7: 2rem;
+    --font-size-mp: 1.6rem;
+    --font-size-mlabel1: 1rem;
+    --font-size-mlabel2: 0.8rem;
+    --font-size-mbutton: 1.2rem;
   
     /* Espaçamentos */
     --spacing-200: 200%;
