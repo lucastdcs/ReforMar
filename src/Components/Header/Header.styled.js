@@ -4,8 +4,8 @@ import backArrow from "../../assets/icons/navigate_before.svg"
 
 
 const StyledHeader = styled.header`
-    max-width: 192rem;
-  width: 100vw;
+  max-width: 192rem;
+  width: 100%;
   height: auto;
   padding: 4rem;
   display: flex;

@@ -16,15 +16,21 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 html {
   font-size: 62.5%; /* 1rem = 10px */
 }
 
-body{
+body {
   overflow-x: hidden;
   display: flex;
   justify-content: center;
+  align-items: center; /* Centraliza verticalmente, ajuste conforme necessário */
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh; /* Garante que ocupe toda a altura da viewport, ajuste conforme necessário */
 }
 
