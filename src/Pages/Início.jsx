@@ -5,9 +5,10 @@ import backgroundImg from "../assets/imgs/Hero-Img.png";
 import { H2 } from "../assets/styles/typography.styled.js";
 import { Text } from "../assets/styles/typography.styled.js";
 import Button from "../Components/Button/Button.jsx";
+import Badges from "../Components/Badges/Badges.jsx";
 
 const Inicio = () => {
-  const StyledContainer = styled.div`
+  const StyledContainer = styled.section`
     position: relative;
     width: 100vw; /* Garante que ocupe toda a largura da viewport */
     height: 100vh; /* Ajuste conforme necessário para a altura desejada */
@@ -71,7 +72,7 @@ const Inicio = () => {
         <Button texto="Veja nossos serviços" />
       </ContentWrapper>
     </StyledContainer>
-    
+    <Badges/>
     </>
   );
 };

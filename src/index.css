@@ -32,9 +32,9 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 100vh; /* Garante que ocupe toda a altura da viewport, ajuste conforme necessário */
   background-image: url("./assets/imgs/Grafismo.png");
   background-size: cover;
+  background-repeat: repeat-y;
 }
 
 /* @media (max-width: 1060px) {
