@@ -57,6 +57,7 @@ const Inicio = () => {
   `;
 
   return (
+    <>
     <StyledContainer>
       <Header />
       <ContentWrapper>
@@ -70,6 +71,8 @@ const Inicio = () => {
         <Button texto="Veja nossos serviços" />
       </ContentWrapper>
     </StyledContainer>
+    
+    </>
   );
 };
 
