@@ -76,6 +76,7 @@ const Inicio = () => {
     width: 100vw;
     color: var(--black);
     padding-left: 30rem;
+    padding-bottom: 10rem;
 
     span {
       color: var(--color-tertiary);

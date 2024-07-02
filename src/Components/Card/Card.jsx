@@ -8,6 +8,7 @@ const Card = () => {
         <>
         <StyledCard>
             <img src={CardExample} alt="" />
+            <h3>Cuba de Cozinha</h3>
         </StyledCard>
         </>
     );
