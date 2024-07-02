@@ -101,3 +101,25 @@ export const Label = styled.a`
         font-size: ${props => (props.primary ? '1.6rem' : '1.2rem')};
     }
 `;
+
+export const LabelTitle = styled.h3`
+    font-family: var(--font-family-grifter);
+    font-size: var(--font-size-label10);
+    line-height: var(--spacing-160);
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+
+    font-size: ${props => (props.primary ? 'var(--font-size-label15)' : 'var(--font-size-label10)')};
+
+    @media (max-width: 1060px) {
+        font-size: ${props => (props.primary ? '2rem' : '1.6rem')};
+    }
+
+    @media (max-width: 768px) {
+        font-size: ${props => (props.primary ? '1.5rem' : '1rem')};
+    }
+
+    @media (max-width: 480px) {
+        font-size: ${props => (props.primary ? '1.3rem' : '0.5rem')};
+    }
+`;

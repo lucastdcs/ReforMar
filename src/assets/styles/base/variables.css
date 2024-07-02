@@ -7,6 +7,8 @@
     --color-tertiary: #0A33F1;
     --color-error: #F85C5C;
     --off-white:#EEEEEE;
+    --grey:#585858;
+    --grey-shadow:rgb(88, 88, 88, 0.3);
 
     /* Fontes */
     --font-family-grifter: 'Grifter', sans-serif;
