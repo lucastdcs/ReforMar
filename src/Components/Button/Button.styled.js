@@ -7,13 +7,12 @@ const StyledButton = styled.button`
     max-height: 7rem; /* Valor base */
     min-height: 4.5rem; /* Valor base */
     /* width: 10vw; */
-    height: 4vw;
-    max-width: 100%; 
+    height: 3vw;
     padding: 0 3rem;
     white-space: nowrap;
 
     background-color: var(--color-tertiary);
-    border-radius: 3rem;
+    border-radius: 2.6rem;
     border-style: none;
 
     font-family: var(--font-family-grifter);

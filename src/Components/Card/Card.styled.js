@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledCard = styled.div`
     margin-top: 8rem;
     max-width: 100rem;
-    height: 60rem;
+    height: fit-content;
     background-color: var(--black);
     border-radius: 2rem;
     position: relative;
@@ -16,9 +16,44 @@ export const StyledCard = styled.div`
         object-fit: cover;
         border-radius: 1.3rem;
     }
-
     h3 {
-        font-family: var(--font-family-helvetica);
+        margin-bottom: 2rem;
     }
+
+    p{
+        color: var(--grey);
+        display: inline-block;
+        margin-right: 8rem;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-areas:
+            'title title title'
+            'text1 text2 button';
+        margin-left: 4rem;
+        margin-top: 2rem;
+    }
+
+    .title {
+        grid-area: title;
+    }
+    .texto1 {
+        grid-area: text1;
+    }
+    .texto2 {
+        grid-area: text2;
+    }
+    .btn {
+        grid-area: button;
+    }
+
+    button {
+        align-self: flex-end;
+
+    }
+
+
+
 
 `;

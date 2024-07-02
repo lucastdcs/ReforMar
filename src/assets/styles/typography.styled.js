@@ -58,9 +58,27 @@ export const H3 = styled.h3`
     }
 `;
 
+export const H5 = styled.h3`
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-h5);
+    line-height: var(--spacing-100);
+
+    @media (max-width: 1060px) {
+        font-size: 2.2rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.8rem;
+    }
+`;
+
 export const Text = styled.p`
     font-family: var(--font-family-helvetica);
-    font-size: var(--font-size-h6);
+    font-size: var(--font-size-h7);
     line-height: var(--spacing-200);
 
     @media (max-width: 1060px) {
