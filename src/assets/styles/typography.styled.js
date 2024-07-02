@@ -108,6 +108,8 @@ export const LabelTitle = styled.h3`
     line-height: var(--spacing-160);
     text-transform: uppercase;
     letter-spacing: 0.4rem;
+    color: var(--grey);
+    text-shadow: 1px 2px 5px var(--grey-shadow);
 
     font-size: ${props => (props.primary ? 'var(--font-size-label15)' : 'var(--font-size-label10)')};
 

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Header from "../Components/Header/Header.jsx";
+import Card from "../Components/Card/Card.jsx";
 import backgroundImg from "../assets/imgs/Hero-Img.png";
 import { H2 } from "../assets/styles/typography.styled.js";
 import { Text } from "../assets/styles/typography.styled.js";
@@ -11,12 +12,13 @@ import Badges from "../Components/Badges/Badges.jsx";
 const Inicio = () => {
   const StyledContainer = styled.section`
     position: relative;
-    width: 100vw; /* Garante que ocupe toda a largura da viewport */
-    height: 100vh; /* Ajuste conforme necessário para a altura desejada */
-    overflow: hidden; /* Para garantir que a imagem não cause overflow */
+    width: 100vw; 
+    padding-bottom: 10rem;
+    min-height: 100vh;
+    overflow: hidden; 
     display: flex;
-    flex-direction: column; /* Centraliza os elementos verticalmente */
-    align-items: center; /* Centraliza os elementos horizontalmente */
+    flex-direction: column; 
+    align-items: center; 
     background-image: url(${backgroundImg});
     background-size: cover;
     background-position: center;
@@ -60,16 +62,29 @@ const Inicio = () => {
   `;
 
   const StyledContainer2 = styled.section`
-    color: var(--grey);
     text-align: center;
     width: 100vw;
     padding: 6rem 0;
 
     h3{
-      text-shadow: 1px 2px 5px var(--grey-shadow);
       margin: 0 2rem;
     }
   
+  `;
+
+  const StyledContainer3 = styled.section`
+    width: 100vw;
+    color: var(--black);
+    padding-left: 30rem;
+
+    span {
+      color: var(--color-tertiary);
+    }
+
+    /* h2, h3{
+      margin-left: 30rem;
+    }
+   */
   `;
 
   return (
@@ -91,6 +106,13 @@ const Inicio = () => {
         <LabelTitle primary>Alguns de nossos certificados</LabelTitle>
         <Badges />
       </StyledContainer2>
+      <StyledContainer3>
+        <LabelTitle primary>Projetos de Sucesso</LabelTitle>
+        <H2>
+          Projetos <span>exclusivos</span>
+        </H2>
+      <Card></Card>
+      </StyledContainer3>
     </>
   );
 };

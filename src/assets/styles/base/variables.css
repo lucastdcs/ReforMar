@@ -1,47 +1,46 @@
 @import './fonts.css';
 
 :root {
-    /* Cores */
-    --color-primary: #0590FA;
-    --color-secondary: #0567F8;
-    --color-tertiary: #0A33F1;
-    --color-error: #F85C5C;
-    --off-white:#EEEEEE;
-    --grey:#585858;
-    --grey-shadow:rgb(88, 88, 88, 0.3);
-
+  /* Cores */
+  --color-primary: #0590FA;
+  --color-secondary: #0567F8;
+  --color-tertiary: #0A33F1;
+  --color-error: #F85C5C;
+  --off-white: #EEEEEE;
+  --grey: #585858;
+  --grey-shadow: rgb(88, 88, 88, 0.3);
+  --black: #1E1B19;
     /* Fontes */
     --font-family-grifter: 'Grifter', sans-serif;
-    --font-family-helvetica: 'Helvetica', sans-serif;
-  
-    /* Tamanhos de Fonte */
-    --font-size-h1: 16rem;
-    --font-size-h2: 10rem;
-    --font-size-h3: 5rem;
-    --font-size-h4: 4.5rem;
-    --font-size-h5: 4rem;
-    --font-size-h6: 2rem;
-    --font-size-label15: 1.5rem;
-    --font-size-label10: 1rem;
+  --font-family-helvetica: 'Helvetica', sans-serif;
 
-    /* Tamanhos de Fonte Mobile */
-    --font-size-mh1: 8rem;
-    --font-size-mh2: 5rem;
-    --font-size-mh3: 2.6rem;
-    --font-size-mh4: 2.2rem;
-    --font-size-mh5: 2rem;
-    --font-size-mh6: 1.8rem;
-    --font-size-mh7: 2rem;
-    --font-size-mp: 1.6rem;
-    --font-size-mlabel1: 1rem;
-    --font-size-mlabel2: 0.8rem;
-    --font-size-mbutton: 1.2rem;
-  
-    /* Espaçamentos */
-    --spacing-200: 200%;
-    --spacing-160: 160%;
-    --spacing-100: 100%;
-    --spacing-90: 90%;
+  /* Tamanhos de Fonte */
+  --font-size-h1: 16rem;
+  --font-size-h2: 10rem;
+  --font-size-h3: 5rem;
+  --font-size-h4: 4.5rem;
+  --font-size-h5: 4rem;
+  --font-size-h6: 2rem;
+  --font-size-label15: 1.5rem;
+  --font-size-label10: 1rem;
 
-  }
+  /* Tamanhos de Fonte Mobile */
+  --font-size-mh1: 8rem;
+  --font-size-mh2: 5rem;
+  --font-size-mh3: 2.6rem;
+  --font-size-mh4: 2.2rem;
+  --font-size-mh5: 2rem;
+  --font-size-mh6: 1.8rem;
+  --font-size-mh7: 2rem;
+  --font-size-mp: 1.6rem;
+  --font-size-mlabel1: 1rem;
+  --font-size-mlabel2: 0.8rem;
+  --font-size-mbutton: 1.2rem;
 
+  /* Espaçamentos */
+  --spacing-200: 200%;
+  --spacing-160: 160%;
+  --spacing-100: 100%;
+  --spacing-90: 90%;
+
+}
