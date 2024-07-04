@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "../Components/Header/Header.jsx";
 import Card from "../Components/Card/Card.jsx";
 import backgroundImg from "../assets/imgs/Hero-Img.png";
+import CardExample from "../assets/imgs/CardExample.png";
 import { H2 } from "../assets/styles/typography.styled.js";
 import { Text } from "../assets/styles/typography.styled.js";
 import { LabelTitle } from "../assets/styles/typography.styled.js";
@@ -12,13 +13,13 @@ import Badges from "../Components/Badges/Badges.jsx";
 const Inicio = () => {
   const StyledContainer = styled.section`
     position: relative;
-    width: 100vw; 
+    width: 100vw;
     padding-bottom: 10rem;
     min-height: 100vh;
-    overflow: hidden; 
+    overflow: hidden;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     background-image: url(${backgroundImg});
     background-size: cover;
     background-position: center;
@@ -66,10 +67,9 @@ const Inicio = () => {
     width: 100vw;
     padding: 6rem 0;
 
-    h3{
+    h3 {
       margin: 0 2rem;
     }
-  
   `;
 
   const StyledContainer3 = styled.section`
@@ -112,7 +112,13 @@ const Inicio = () => {
         <H2>
           Projetos <span>exclusivos</span>
         </H2>
-      <Card></Card>
+        <Card 
+        img={CardExample} 
+        title="Cuba de Cozinha" 
+        area="30m²" 
+        type="Residência" 
+        location="Santos - SP" 
+        description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"/>
       </StyledContainer3>
     </>
   );
