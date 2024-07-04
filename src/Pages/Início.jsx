@@ -9,6 +9,7 @@ import { Text } from "../assets/styles/typography.styled.js";
 import { LabelTitle } from "../assets/styles/typography.styled.js";
 import Button from "../Components/Button/Button.jsx";
 import Badges from "../Components/Badges/Badges.jsx";
+import Carousel from "../Components/Carrousel/Carousel.jsx";
 
 const Inicio = () => {
   const StyledContainer = styled.section`
@@ -112,13 +113,32 @@ const Inicio = () => {
         <H2>
           Projetos <span>exclusivos</span>
         </H2>
-        <Card 
-        img={CardExample} 
-        title="Cuba de Cozinha" 
-        area="30m²" 
-        type="Residência" 
-        location="Santos - SP" 
-        description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"/>
+        <Carousel>
+          <Card
+            img={CardExample}
+            title="Cuba de Cozinha"
+            area="30m²"
+            type="Residência"
+            location="Santos - SP"
+            description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
+          />
+          <Card
+            img={CardExample}
+            title="Cuba de Cozinha"
+            area="30m²"
+            type="Residência"
+            location="Santos - SP"
+            description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
+          />
+          <Card
+            img={CardExample}
+            title="Cuba de Cozinha"
+            area="30m²"
+            type="Residência"
+            location="Santos - SP"
+            description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
+          />
+        </Carousel>
       </StyledContainer3>
     </>
   );
