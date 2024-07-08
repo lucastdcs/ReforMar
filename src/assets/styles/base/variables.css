@@ -14,6 +14,14 @@
     --font-family-grifter: 'Grifter', sans-serif;
   --font-family-helvetica: 'Helvetica', sans-serif;
 
+  /* scroll bar */
+
+  
+  --sb-track-color: #B5B5B5;
+  --sb-thumb-color: #0a33f1;
+  --sb-size: 12px;
+
+
   /* Tamanhos de Fonte */
   --font-size-h1: 16rem;
   --font-size-h2: 10rem;

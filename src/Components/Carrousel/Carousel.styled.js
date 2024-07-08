@@ -11,4 +11,5 @@ export const CarouselContainer = styled.div`
     flex: 0 0 auto; /* Impede que os itens flex encolham ou cresçam */
   }
 
+
 `;
