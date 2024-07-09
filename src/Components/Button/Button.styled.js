@@ -20,6 +20,12 @@ const StyledButton = styled.button`
 
     cursor: pointer;
 
+    ${props => props.variant === 'outline' && css`
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+    `}
+
 `;
 
 export default StyledButton
