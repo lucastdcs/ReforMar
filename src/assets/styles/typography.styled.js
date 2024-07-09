@@ -62,6 +62,24 @@ export const H3 = styled.h3`
     }
 `;
 
+export const H4 = styled.h3`
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-h4);
+    line-height: var(--spacing-100);
+
+    @media (max-width: 1060px) {
+        font-size: 2.2rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.8rem;
+    }
+`;
+
 export const H5 = styled.h3`
     font-family: var(--font-family-helvetica);
     font-size: var(--font-size-h5);
