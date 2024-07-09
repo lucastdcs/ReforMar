@@ -11,9 +11,8 @@ export const CarouselContainer = styled.div`
     scroll-snap-align: start;
     flex: 0 0 auto; /* Impede que os itens flex encolham ou cresçam */
   }
-  ::-webkit-scrollbar-track {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+  ::-webkit-scrollbar {
+    height: 20rem;
+  }
 
 `;

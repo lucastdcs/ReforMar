@@ -23,6 +23,10 @@ export const H2 = styled.h2`
     font-size: var(--font-size-h2);
     line-height: var(--spacing-90);
 
+    span {
+      color: var(--color-tertiary);
+    }
+
     @media (max-width: 1060px) {
         font-size: 8rem;
     }

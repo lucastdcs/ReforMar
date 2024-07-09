@@ -4,6 +4,7 @@ import Header from "../Components/Header/Header.jsx";
 import Card from "../Components/Card/Card.jsx";
 import backgroundImg from "../assets/imgs/Hero-Img.png";
 import CardExample from "../assets/imgs/CardExample.png";
+import Titles from "../Components/Titles/Titles.jsx";
 import { H2 } from "../assets/styles/typography.styled.js";
 import { Text } from "../assets/styles/typography.styled.js";
 import { LabelTitle } from "../assets/styles/typography.styled.js";
@@ -80,12 +81,22 @@ const Inicio = () => {
     padding-right: 2rem;
     padding-bottom: 10rem;
 
-    span {
-      color: var(--color-tertiary);
+    .project_title {
+      text-align: start;
+      margin-left: 10%;
     }
+  
+  `;
+  const StyledContainer4 = styled.section`
+    width: 100vw;
+    color: var(--black);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 10rem;
 
-    .title {
-      margin-left: 20rem;
+    .project_title {
+      text-align: start;
+      margin-left: 10%;
     }
   
   `;
@@ -110,10 +121,7 @@ const Inicio = () => {
         <Badges />
       </StyledContainer2>
       <StyledContainer3>
-        <LabelTitle className="title">Projetos de Sucesso</LabelTitle>
-        <H2 className="title">
-          Projetos <span>exclusivos</span>
-        </H2>
+        <Titles text_label="Projetos de Sucesso" text_title="Projetos" text_span="Exclusivos"/>
         <Carousel>
           <Card
             img={CardExample}
@@ -157,6 +165,9 @@ const Inicio = () => {
           />
         </Carousel>
       </StyledContainer3>
+      <StyledContainer4>
+      <Titles text_label="Nossos serviços" text_title="Serviços para seu" text_span="novo lar"/>
+      </StyledContainer4>
     </>
   );
 };
