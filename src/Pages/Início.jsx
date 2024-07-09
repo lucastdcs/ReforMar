@@ -76,17 +76,18 @@ const Inicio = () => {
   const StyledContainer3 = styled.section`
     width: 100vw;
     color: var(--black);
-    padding-left: 30rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-bottom: 10rem;
 
     span {
       color: var(--color-tertiary);
     }
 
-    /* h2, h3{
-      margin-left: 30rem;
+    .title {
+      margin-left: 20rem;
     }
-   */
+  
   `;
 
   return (
@@ -109,11 +110,27 @@ const Inicio = () => {
         <Badges />
       </StyledContainer2>
       <StyledContainer3>
-        <LabelTitle primary>Projetos de Sucesso</LabelTitle>
-        <H2>
+        <LabelTitle className="title">Projetos de Sucesso</LabelTitle>
+        <H2 className="title">
           Projetos <span>exclusivos</span>
         </H2>
         <Carousel>
+          <Card
+            img={CardExample}
+            title="Cuba de Cozinha"
+            area="30m²"
+            type="Residência"
+            location="Santos - SP"
+            description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
+          />
+          <Card
+            img={CardExample}
+            title="Cuba de Cozinha"
+            area="30m²"
+            type="Residência"
+            location="Santos - SP"
+            description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
+          />
           <Card
             img={CardExample}
             title="Cuba de Cozinha"
