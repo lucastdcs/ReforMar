@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const StyledServicesCard = styled.div`
-   width: 60rem;
-   max-width: 100%;
+   max-width: 60rem;
+   min-width: 30rem;
    height: 60rem;
    background-color: var(--black);
    border-radius: 4rem;
@@ -12,7 +12,7 @@ export const StyledServicesCard = styled.div`
 
 
    p {
-    color: var(--grey);
+    color: var(--grey1);
     
    }
    h3{
@@ -27,5 +27,17 @@ export const StyledServicesCard = styled.div`
 
    div button:nth-child(1){
       margin-right: 1rem;
+   }
+   
+   @media (max-width:740px){
+      div button:nth-child(1){
+         margin-bottom: 1rem;
+      }
+   padding: 4rem 2rem 2rem 4rem;
+   div  {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: end;
+   }
    }
 `;
