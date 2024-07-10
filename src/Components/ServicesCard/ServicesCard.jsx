@@ -19,8 +19,10 @@ const ServicesCard = (props) => {
           pias, torneiras e realizamos pinturas para dar vida nova ao ambiente,
           tornando-o perfetio para suas necessidades diárias.
         </Text>
-        <Button text="Entre em contato" variant="outline"/>
-        <Button text="Veja nosso portfólio"/>
+        <div className="">
+          <Button texto="Entre em contato" variant="outline" />
+          <Button texto="Veja nosso portfólio" />
+        </div>
       </StyledServicesCard>
     </>
   );

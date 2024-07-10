@@ -5,6 +5,7 @@ import Card from "../Components/Card/Card.jsx";
 import backgroundImg from "../assets/imgs/Hero-Img.png";
 import CardExample from "../assets/imgs/CardExample.png";
 import Titles from "../Components/Titles/Titles.jsx";
+import ServicesCard from "../Components/ServicesCard/ServicesCard.jsx";
 import { H2 } from "../assets/styles/typography.styled.js";
 import { Text } from "../assets/styles/typography.styled.js";
 import { LabelTitle } from "../assets/styles/typography.styled.js";
@@ -167,6 +168,7 @@ const Inicio = () => {
       </StyledContainer3>
       <StyledContainer4>
       <Titles text_label="Nossos serviços" text_title="Serviços para seu" text_span="novo lar"/>
+      <ServicesCard></ServicesCard>
       </StyledContainer4>
     </>
   );

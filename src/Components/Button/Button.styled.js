@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import "../../assets/styles/base/variables.css"
 
 const StyledButton = styled.button`
@@ -20,10 +20,10 @@ const StyledButton = styled.button`
 
     cursor: pointer;
 
+    color: white;
     ${props => props.variant === 'outline' && css`
         background-color: transparent;
         border: 2px solid white;
-        color: white;
     `}
 
 `;
