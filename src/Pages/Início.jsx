@@ -109,7 +109,7 @@ const Inicio = () => {
     margin: auto;
     margin-top: 8rem;
     display: grid;
-    width: 65vw;
+    /* width: 65vw; */
     max-width: 120rem;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;

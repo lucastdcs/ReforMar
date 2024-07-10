@@ -18,6 +18,8 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+
 }
 
 html {
@@ -28,7 +30,7 @@ body {
   overflow-x: hidden;
   display: flex;
   justify-content: center;
-  align-items: center; /* Centraliza verticalmente, ajuste conforme necessário */
+  align-items: center;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -36,20 +38,6 @@ body {
   background-size: cover;
   background-repeat: repeat-y;
 }
-
-/* @media (max-width: 1060px) {
-  h2 {
-    font-size: var(--font-size-mh2);
-  }
-  
-  p {
-    font-size: var( --font-size-mp);
-  }
-
-  button {
-    font-size: var(--font-size-mbutton);
-  }
-} */
 
 
 ::-webkit-scrollbar {

@@ -55,6 +55,26 @@ export const StyledCard = styled.div`
     }
 
 
+    @media (max-width:1050px){
+        width: fit-content;
+        height: 46rem;
+       
+        .wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.5rem;
+        } 
+       
+        p{
+            margin-right: 0;
+        }
+       img {
+        height: 15rem;
+        }
 
+        button {
+            margin-top: 3rem;
+        }
+    }
 
 `;
