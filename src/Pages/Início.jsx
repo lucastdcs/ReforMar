@@ -12,11 +12,13 @@ import { LabelTitle } from "../assets/styles/typography.styled.js";
 import Button from "../Components/Button/Button.jsx";
 import Badges from "../Components/Badges/Badges.jsx";
 import Carousel from "../Components/Carrousel/Carousel.jsx";
+import Values from "../Components/Values/Values.jsx";
 import Kitchen from "../assets/icons/services_kitchen.svg";
 import Bath from "../assets/icons/services_bath.svg";
 import Barbecue from "../assets/icons/services_barbecue.svg";
 import Laundry from "../assets/icons/services_laundry.svg";
 import Porch from "../assets/icons/services_porch.svg";
+import Agile from "../assets/icons/values_agile.svg";
 
 const Inicio = () => {
   const StyledContainer = styled.section`
@@ -118,8 +120,8 @@ const Inicio = () => {
     :last-child {
       grid-column: span 2;
     }
-    
-    @media (max-width: 1540px){
+
+    @media (max-width: 1540px) {
       grid-template-columns: 1fr;
       justify-items: center;
       :last-child {
@@ -127,6 +129,19 @@ const Inicio = () => {
       }
     }
   `;
+
+  const StyledContainer5 = styled.section`
+    width: 100vw;
+    color: var(--black);
+    text-align: center;
+  `;
+
+  const ValuesGrid = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 2fr 1fr;
+  `;
+
   return (
     <>
       <StyledContainer>
@@ -231,6 +246,41 @@ const Inicio = () => {
           />
         </ServicesGrid>
       </StyledContainer4>
+      <StyledContainer5>
+        <Titles
+          text_label="Sobre nós"
+          text_title="Nossos "
+          text_span="Valores:"
+        />
+
+        <ValuesGrid>
+          <Values
+            icon={Agile}
+            title="Agilidade e Flexibilidade"
+            text="Priorizamos a rapidez e adaptabilidade em cada projeto. Estamos sempre prontos para responder às necessidades do cliente de forma eficiente, garantindo que as soluções sejam entregues dentro do prazo e com flexibilidade para ajustes conforme necessário."
+          />
+          <Values
+            icon={Agile}
+            title="Agilidade e Flexibilidade"
+            text="Priorizamos a rapidez e adaptabilidade em cada projeto. Estamos sempre prontos para responder às necessidades do cliente de forma eficiente, garantindo que as soluções sejam entregues dentro do prazo e com flexibilidade para ajustes conforme necessário."
+          />
+          <Values
+            icon={Agile}
+            title="Agilidade e Flexibilidade"
+            text="Priorizamos a rapidez e adaptabilidade em cada projeto. Estamos sempre prontos para responder às necessidades do cliente de forma eficiente, garantindo que as soluções sejam entregues dentro do prazo e com flexibilidade para ajustes conforme necessário."
+          />
+          <Values
+            icon={Agile}
+            title="Agilidade e Flexibilidade"
+            text="Priorizamos a rapidez e adaptabilidade em cada projeto. Estamos sempre prontos para responder às necessidades do cliente de forma eficiente, garantindo que as soluções sejam entregues dentro do prazo e com flexibilidade para ajustes conforme necessário."
+          />
+          <Values
+            icon={Agile}
+            title="Agilidade e Flexibilidade"
+            text="Priorizamos a rapidez e adaptabilidade em cada projeto. Estamos sempre prontos para responder às necessidades do cliente de forma eficiente, garantindo que as soluções sejam entregues dentro do prazo e com flexibilidade para ajustes conforme necessário."
+          />
+        </ValuesGrid>
+      </StyledContainer5>
     </>
   );
 };
