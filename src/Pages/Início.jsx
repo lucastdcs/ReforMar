@@ -63,10 +63,11 @@ const Inicio = () => {
 
   const ContentWrapper = styled.div`
     align-self: flex-start;
-    margin-top: 15vh; /* Ajusta a margem superior com base na altura da viewport */
-    margin-left: 15vw; /* Ajusta a margem esquerda com base na largura da viewport */
-    max-width: 64rem; /* Define a largura máxima do conteúdo */
-    padding: 0 2rem; /* Adiciona algum espaçamento lateral conforme necessário */
+    margin-top: 15vh; 
+    margin-left: 15vw; 
+    max-width: 64rem;
+    min-width: fit-content;
+    padding: 0 2rem; 
 
     @media (max-width: 480px) {
       position: absolute;
@@ -193,7 +194,7 @@ const Inicio = () => {
         <Header />
         <ContentWrapper>
           <H2>
-            Transforme seu <span>espaço</span>
+            Transforme <br /> seu <span>espaço</span>
           </H2>
           <Text>
             Inovação e excelência em reformas residenciais <br /> com ReforMar

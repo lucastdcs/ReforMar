@@ -23,11 +23,10 @@ const StyledContainer = styled.div`
     -ms-overflow-style: none;
 
     @media (max-width: 515px) {
-        position: relative;
-        left: 1rem;
-        justify-content: start;
+        /* justify-content: start; */
         overflow-x: auto;
     }
 `;
 
 export default StyledContainer
+

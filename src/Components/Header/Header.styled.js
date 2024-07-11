@@ -70,6 +70,7 @@ const StyledHeader = styled.header`
     .wrapper {
       gap: 5rem;
     }
+
     .wrapper2 {
       gap: 5rem;
     }
@@ -99,6 +100,15 @@ const StyledHeader = styled.header`
     }
     #nav_menu {
       display: block;
+    }
+
+    .wrapper2 {
+      gap: 0;
+    }
+
+    .wrapper {
+      width: fit-content;
+      gap: 15vw;
     }
   }
 `;
