@@ -19,6 +19,10 @@ import Barbecue from "../assets/icons/services_barbecue.svg";
 import Laundry from "../assets/icons/services_laundry.svg";
 import Porch from "../assets/icons/services_porch.svg";
 import Agile from "../assets/icons/values_agile.svg";
+import Colaborate from "../assets/icons/values_collaborate.svg";
+import Customer from "../assets/icons/values_customer.svg";
+import Learning from "../assets/icons/values_learning.svg";
+import Quality from "../assets/icons/values_quality.svg";
 
 const Inicio = () => {
   const StyledContainer = styled.section`
@@ -137,9 +141,50 @@ const Inicio = () => {
   `;
 
   const ValuesGrid = styled.div`
+    margin: auto;
+    max-width: 80vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 2fr auto 2fr;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 5rem;
+
+    .agile {
+      grid-column: 1 / span 2;
+      grid-row: 2 / span 2;
+    }
+
+    .customer {
+      grid-column: 3 / span 2;
+      grid-row: 1 / span 2;
+    }
+
+    .quality {
+      grid-column: 5 / span 2;
+      grid-row: 2 / span 2;
+    }
+
+    .colaborate {
+      grid-column: 2 / span 2;
+      grid-row: 4 / span 2;
+    }
+
+    .learning {
+      grid-column: 4 / span 2;
+      grid-row: 4 / span 2;
+    }
+
+    .btn {
+      grid-column: 3 / span 2;
+      grid-row: 3;
+    }
+
+    @media (max-width: 1330px){
+      display: flex;
+      flex-direction: column;
+      max-width: 90vw;
+    }
   `;
 
   return (
@@ -255,30 +300,36 @@ const Inicio = () => {
 
         <ValuesGrid>
           <Values
+            className="agile"
             icon={Agile}
             title="Agilidade e Flexibilidade"
             text="Priorizamos a rapidez e adaptabilidade em cada projeto. Estamos sempre prontos para responder às necessidades do cliente de forma eficiente, garantindo que as soluções sejam entregues dentro do prazo e com flexibilidade para ajustes conforme necessário."
           />
           <Values
-            icon={Agile}
-            title="Agilidade e Flexibilidade"
-            text="Priorizamos a rapidez e adaptabilidade em cada projeto. Estamos sempre prontos para responder às necessidades do cliente de forma eficiente, garantindo que as soluções sejam entregues dentro do prazo e com flexibilidade para ajustes conforme necessário."
+            className="customer"
+            icon={Customer}
+            title="Proposta focada no Cliente"
+            text="Colocamos as necessidades e desejos do cliente no centro de tudo o que fazemos. Desde o planejamento até a conclusão do projeto, nossa equipe está comprometida em entender e atender às expectativas do cliente, garantindo sua total satisfação."
           />
           <Values
-            icon={Agile}
-            title="Agilidade e Flexibilidade"
-            text="Priorizamos a rapidez e adaptabilidade em cada projeto. Estamos sempre prontos para responder às necessidades do cliente de forma eficiente, garantindo que as soluções sejam entregues dentro do prazo e com flexibilidade para ajustes conforme necessário."
+            className="quality"
+            icon={Quality}
+            title="Excelência e Qualidade"
+            text="Buscamos a excelência em cada detalhe. Desde a seleção dos materiais até a execução do trabalho, nos esforçamos para alcançar os mais altos padrões de qualidade. Nossa dedicação à excelência garante resultados duradouros e satisfatórios para nossos clientes."
           />
           <Values
-            icon={Agile}
-            title="Agilidade e Flexibilidade"
-            text="Priorizamos a rapidez e adaptabilidade em cada projeto. Estamos sempre prontos para responder às necessidades do cliente de forma eficiente, garantindo que as soluções sejam entregues dentro do prazo e com flexibilidade para ajustes conforme necessário."
+            className="colaborate"
+            icon={Colaborate}
+            title="Integridade e Trasparência"
+            text="Agimos com honestidade e transparência em todas as nossas interações. Mantemos uma comunicação aberta e honesta com nossos clientes, fornecendo informações claras sobre o processo, custos e prazos. Nossa integridade é a base de relacionamentos de confiança com os clientes."
           />
           <Values
-            icon={Agile}
-            title="Agilidade e Flexibilidade"
-            text="Priorizamos a rapidez e adaptabilidade em cada projeto. Estamos sempre prontos para responder às necessidades do cliente de forma eficiente, garantindo que as soluções sejam entregues dentro do prazo e com flexibilidade para ajustes conforme necessário."
+            className="learning"
+            icon={Learning}
+            title="Aprendizado Contínuo"
+            text="Estamos comprometidos com o aprimoramento constante. Buscamos sempre aprender com cada projeto, identificando áreas de melhoria e implementando novas técnicas e tecnologias. Nosso compromisso com o aprendizado contínuo nos permite oferecer serviços cada vez melhores aos nossos clientes."
           />
+          <Button className="btn" texto="Veja Detalhes" />
         </ValuesGrid>
       </StyledContainer5>
     </>

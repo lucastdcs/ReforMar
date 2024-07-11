@@ -5,7 +5,7 @@ import { StyledContainer } from "./Values.styled.js";
 
 const Values = (props) => {
   return (
-    <StyledContainer>
+    <StyledContainer className={props.className}>
       <span><img src={props.icon}/></span>
       <H4>{props.title}</H4>
       <Text>{props.text}</Text>

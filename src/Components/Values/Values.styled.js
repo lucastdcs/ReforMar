@@ -6,5 +6,6 @@ export const StyledContainer= styled.div`
 
     h3 {
         color: var(--color-tertiary);
+        margin: 4% 0 6% 0;
     }
 `;
