@@ -63,11 +63,11 @@ const Inicio = () => {
 
   const ContentWrapper = styled.div`
     align-self: flex-start;
-    margin-top: 15vh; 
-    margin-left: 15vw; 
+    margin-top: 15vh;
+    margin-left: 15vw;
     max-width: 64rem;
     min-width: fit-content;
-    padding: 0 2rem; 
+    padding: 0 2rem;
 
     @media (max-width: 480px) {
       position: absolute;
@@ -181,13 +181,15 @@ const Inicio = () => {
       grid-row: 3;
     }
 
-    @media (max-width: 1330px){
+    @media (max-width: 1330px) {
       display: flex;
       flex-direction: column;
       max-width: 90vw;
     }
   `;
-
+  const StyledContainer6 = styled.section`
+    width: 100vw;
+  `;
   return (
     <>
       <StyledContainer>
@@ -333,6 +335,13 @@ const Inicio = () => {
           <Button className="btn" texto="Veja Detalhes" />
         </ValuesGrid>
       </StyledContainer5>
+      <StyledContainer6>
+        <Titles
+          text_label=""
+          text_title="Nossos"
+          text_span="Números:"
+        />
+      </StyledContainer6>
     </>
   );
 };
