@@ -13,7 +13,7 @@ import Button from "../Components/Button/Button.jsx";
 import Badges from "../Components/Badges/Badges.jsx";
 import Carousel from "../Components/Carrousel/Carousel.jsx";
 import Values from "../Components/Values/Values.jsx";
-import NumbersCard from "../Components/NumbersCard/NumbersCard.jsx";
+import NumbersGrid from "../Components/NumbersGrid/NumbersGrid.jsx";
 import Kitchen from "../assets/icons/services_kitchen.svg";
 import Bath from "../assets/icons/services_bath.svg";
 import Barbecue from "../assets/icons/services_barbecue.svg";
@@ -197,37 +197,6 @@ const Inicio = () => {
     }
   `;
 
-  const NumbersGrid = styled.div`
-    margin: auto;
-    margin-top: 6rem;
-    max-width: 150rem;
-    height: 70rem;
-    display: grid;
-    grid-template-rows: 1fr 2fr 2fr 1fr;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-gap: 2rem;
-
-    .card1 {
-      grid-row: 1 / span 2;
-      grid-column: 1;
-    }
-    .card2 {
-      grid-row: 2;
-      grid-column: 2 / span 2;
-    }
-    .card3 {
-      grid-row: 3;
-      grid-column: 1 / span 2;
-    }
-    .card4 {
-      grid-row: 3 / span 2;
-      grid-column: 3;
-    }
-
-    :nth-child(3){
-        width: 100%;
-    }
-  `;
   return (
     <>
       <StyledContainer>
@@ -375,21 +344,8 @@ const Inicio = () => {
       </StyledContainer5>
       <StyledContainer6>
         <Titles text_label="" text_title="Nossos" text_span="Números:" />
-
-        <NumbersGrid>
-          <NumbersCard item="card1" number="9+">
-            Colaboradores <br /> no Time
-          </NumbersCard>
-          <NumbersCard item="card2" number="2+ anos" align="right">
-            No mercado
-          </NumbersCard>
-          <NumbersCard item="card3" number="91% dos clientes" align="right" size="h2">
-            Nos recomendam
-          </NumbersCard>
-          <NumbersCard item="card4" number="25+">
-            Projetos lançados
-          </NumbersCard>
-        </NumbersGrid>
+        <NumbersGrid />
+        <Button texto="Entre em contato" />
       </StyledContainer6>
     </>
   );
