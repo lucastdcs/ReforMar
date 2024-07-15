@@ -195,6 +195,17 @@ const Inicio = () => {
     h2 {
       margin-top: 8rem;
     }
+    margin-bottom: 13rem;
+  `;
+
+  const StyledContainer7 = styled.section`
+    width: 100vw;
+    color: var(--black);
+    text-align: center;
+    .project_title {
+      text-align: start;
+      margin-left: 10%;
+    }
   `;
 
   return (
@@ -347,6 +358,17 @@ const Inicio = () => {
         <NumbersGrid />
         <Button texto="Entre em contato" />
       </StyledContainer6>
+      <StyledContainer7>
+        <Titles
+          text_label="feedback de clientes"
+          text_title="Ouça de nossos"
+          text_span="clientes satisfeitos!"
+        />
+
+        <Carousel>
+          
+        </Carousel>
+      </StyledContainer7>
     </>
   );
 };

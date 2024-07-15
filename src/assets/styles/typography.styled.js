@@ -98,6 +98,41 @@ export const H5 = styled.h3`
     }
 `;
 
+export const H6 = styled.h3`
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-h6);
+    line-height: var(--spacing-100);
+
+    @media (max-width: 1060px) {
+        font-size: 2.2rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.8rem;
+    }
+`;
+export const H7 = styled.h3`
+    font-family: var(--font-family-grifter);
+    font-size: var(--font-size-h7);
+    line-height: var(--spacing-100);
+
+    @media (max-width: 1060px) {
+        font-size: 2.2rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.8rem;
+    }
+`;
+
 export const Text = styled.p`
     font-family: var(--font-family-helvetica);
     font-size: var(--font-size-h7);
