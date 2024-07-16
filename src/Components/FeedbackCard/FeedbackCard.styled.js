@@ -3,6 +3,7 @@ import styled from "styled-components";
 const StyledContainer = styled.div`
     max-width: 40rem;
     padding: 3rem;
+    margin-bottom: 2rem;
     height: auto;
     border: 1px solid black;
     border-radius: 3rem;

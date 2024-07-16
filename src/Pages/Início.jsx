@@ -12,6 +12,7 @@ import { LabelTitle } from "../assets/styles/typography.styled.js";
 import Button from "../Components/Button/Button.jsx";
 import Badges from "../Components/Badges/Badges.jsx";
 import FeedbackCard from "../Components/FeedbackCard/FeedbackCard.jsx";
+import ContactUs from "../Components/ContactUs/ContactUs.jsx";
 import Carousel from "../Components/Carrousel/Carousel.jsx";
 import Values from "../Components/Values/Values.jsx";
 import NumbersGrid from "../Components/NumbersGrid/NumbersGrid.jsx";
@@ -207,6 +208,12 @@ const Inicio = () => {
       text-align: start;
       margin-left: 10%;
     }
+    h2 {margin-bottom: 8rem;}
+
+    button {
+      margin-top: 6rem;
+      margin-bottom: 6rem;
+    }
   `;
 
   return (
@@ -368,8 +375,17 @@ const Inicio = () => {
 
         <Carousel>
           <FeedbackCard/>
+          <FeedbackCard/>
+          <FeedbackCard/>
+          <FeedbackCard/>
+          <FeedbackCard/>
+          <FeedbackCard/>
+          <FeedbackCard/>
         </Carousel>
+
+        <Button texto="Entre em contato"/>
       </StyledContainer7>
+      <ContactUs/>
     </>
   );
 };
