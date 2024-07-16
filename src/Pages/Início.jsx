@@ -11,6 +11,7 @@ import { Text } from "../assets/styles/typography.styled.js";
 import { LabelTitle } from "../assets/styles/typography.styled.js";
 import Button from "../Components/Button/Button.jsx";
 import Badges from "../Components/Badges/Badges.jsx";
+import FeedbackCard from "../Components/FeedbackCard/FeedbackCard.jsx";
 import Carousel from "../Components/Carrousel/Carousel.jsx";
 import Values from "../Components/Values/Values.jsx";
 import NumbersGrid from "../Components/NumbersGrid/NumbersGrid.jsx";
@@ -366,7 +367,7 @@ const Inicio = () => {
         />
 
         <Carousel>
-          
+          <FeedbackCard/>
         </Carousel>
       </StyledContainer7>
     </>
