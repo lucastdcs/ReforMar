@@ -83,14 +83,27 @@ export const StyledLocations = styled.div`
     margin: auto;
     margin-top: 12rem;
     text-align: center;
-    display: flex;
-    gap: 2rem;
-
+    :nth-child(3){
+        margin-right: 2rem;
+    }
 `;
 
 export const StyledLocationsCard = styled.div`
-    width: 46rem;
+    display: inline-block;
+    max-width: 56rem;
     margin-top: 12rem;
     text-align: center;
+    border: 1px solid var(--off-white);
+    border-radius: 3rem;
+    padding: 6rem 10rem;
+
+    svg {
+        margin-bottom: 2rem;
+    }
+
+    p {
+        margin: 6rem 0;
+        color: var(--grey);
+    }
 
 `;
