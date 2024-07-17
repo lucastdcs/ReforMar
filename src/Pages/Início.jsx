@@ -26,6 +26,7 @@ import Colaborate from "../assets/icons/values_collaborate.svg";
 import Customer from "../assets/icons/values_customer.svg";
 import Learning from "../assets/icons/values_learning.svg";
 import Quality from "../assets/icons/values_quality.svg";
+import Footer from "../Components/Footer/Footer.jsx";
 
 const Inicio = () => {
   const StyledContainer = styled.section`
@@ -386,6 +387,7 @@ const Inicio = () => {
         <Button texto="Entre em contato"/>
       </StyledContainer7>
       <ContactUs/>
+      <Footer/>
     </>
   );
 };
