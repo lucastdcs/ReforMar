@@ -143,6 +143,7 @@ const Inicio = () => {
     width: 100vw;
     color: var(--black);
     text-align: center;
+    height: max-content;
 
   `;
 

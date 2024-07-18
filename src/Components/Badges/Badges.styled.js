@@ -9,7 +9,7 @@ const StyledContainer = styled.div`
     gap: 1.6rem;
     padding: 6rem 0;
     /* margin: 0 1rem; */
-    overflow-x: auto; /* Permite a rolagem horizontal */
+    overflow-x: auto; 
 
     /* Esconde a scrollbar em WebKit (Chrome, Safari) */
     ::-webkit-scrollbar {
@@ -23,8 +23,11 @@ const StyledContainer = styled.div`
     -ms-overflow-style: none;
 
     @media (max-width: 515px) {
-        /* justify-content: start; */
-        overflow-x: auto;
+        /* justify-content: start;
+        overflow-x: auto; */
+
+        /* flex-direction: column; */
+        flex-wrap: wrap;
     }
 `;
 

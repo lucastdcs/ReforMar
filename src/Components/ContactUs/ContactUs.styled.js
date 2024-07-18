@@ -122,6 +122,10 @@ export const StyledArchive = styled.div`
         width: 100%;
     }
 
+    ::file-selector-button {
+    display: none;
+    }
+
 `;
 
 

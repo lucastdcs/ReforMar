@@ -18,6 +18,7 @@ const StyledContainer = styled.div`
         grid-column: 1;
         grid-row: 1 / span 2;
         align-self: center;
+        margin-right: 1rem;
     }
 
     .fb_name{
@@ -52,6 +53,9 @@ const StyledContainer = styled.div`
         line-height: normal;
     }
 
+    @media (max-width:428px){
+        width: 90vw;
+    }
 `;
 
 export default StyledContainer;

@@ -6,9 +6,10 @@ export const StyledNumbersGrid = styled.div`
     margin-bottom: 8rem;
     
     max-width: 150rem;
-    height: 70rem;
+    min-height: 70rem;
+    max-height: 100%;
     display: grid;
-    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 0.3fr 2fr 2fr 0.3fr;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 2rem;
 
