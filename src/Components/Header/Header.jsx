@@ -1,17 +1,13 @@
 import React, { useState } from "react";
-import Logo from "../../assets/icons/Logotipo.svg";
 import LogoPequeno from "../../assets/icons/LogotipoSmall.svg";
 import StyledHeader from "./Header.styled.js";
 import { StyledNav } from "./Header.styled.js";
 import { StyledNavButton } from "./Header.styled.js";
 import { Label } from "../../assets/styles/typography.styled.js";
-import instagram from "../../assets/icons/instagram.svg";
-import whatsapp from "../../assets/icons/whatsapp.svg";
-import youtube from "../../assets/icons/youtube.svg";
-import menu from "../../assets/icons/Nav-Menu.svg"
+
 import Button from "../Button/Button.jsx";
 
-const Header = () => {
+const Header = (props) => {
 
   const [menuActive, setMenuActive] = useState(false)
 
@@ -23,19 +19,19 @@ const Header = () => {
     setMenuActive(false);
   };
   return (
-    <StyledHeader>
+    <StyledHeader textColor={props.textColor}>
       <div className="wrapper">
-        <img src={Logo} alt="Logotipo" id="logo" />
+        <img src={props.logo} alt="Logotipo" id="logo" />
         <img src={LogoPequeno} alt="Logotipo" id="logo_pequeno" />
         <span>
           <a href="">
-            <img src={instagram} alt="" />
+            <img src={props.instagramIcon} alt="" />
           </a>
           <a href="">
-            <img src={youtube} alt="" />
+            <img src={props.youtubeIcon} alt="" />
           </a>
           <a href="">
-            <img src={whatsapp} alt="" />
+            <img src={props.whatsappIcon} alt="" />
           </a>
         </span>
       </div>
@@ -59,7 +55,7 @@ const Header = () => {
         </StyledNav>
         <Button texto="Entre em contato" />
         <StyledNavButton id="nav_menu" onClick={toggleMenu}>
-          <img src={menu} alt="" />
+          <img src={props.menuIcon} alt="" />
         </StyledNavButton>
       </div>
     </StyledHeader>

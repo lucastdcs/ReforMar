@@ -17,6 +17,9 @@ const StyledHeader = styled.header`
   gap: 15vw;
   z-index: 10;
 
+  .wrapper2 nav ul li a {
+    color: ${(props) => props.textColor};
+  }
   .wrapper {
     width: 20%;
     max-width: 50rem;
@@ -25,20 +28,20 @@ const StyledHeader = styled.header`
     align-items: center;
     gap: 5rem;
   }
-
+  
   .wrapper2 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10rem;
   }
-
+  
   span {
     display: flex;
     gap: 3rem;
     height: 1.5rem;
   }
-
+  
   span a {
     margin: 0;
     height: min-content;
