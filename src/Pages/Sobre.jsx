@@ -20,7 +20,6 @@ const Sobre = () => {
     text-align: center;
     display: flex;
     flex-direction: column;
-    /* overflow: hidden; */
 
     section {
       margin-top: 10rem;
@@ -33,6 +32,12 @@ const Sobre = () => {
       flex-direction: column;
       gap: 2rem;
       padding: 0 3rem;
+    }
+
+    @media (max-width:840px){
+      .cards_wrapper{
+        padding: 0 1rem;
+      }
     }
 
   `;

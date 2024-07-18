@@ -118,7 +118,9 @@ const StyledHeader = styled.header`
     .wrapper2 {
       gap: 0;
     }
-
+    .wrapper2 nav ul li a {
+      color: var(--off-white);
+    }
     .wrapper {
       width: fit-content;
       gap: 15vw;
@@ -166,7 +168,7 @@ export const StyledNav = styled.nav`
             justify-content: center;
             gap: 4rem;
             height: 100vh;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.9);
             position: fixed;
             top: 0;
             right: -100vw;
@@ -177,6 +179,7 @@ export const StyledNav = styled.nav`
         &.active ul {
             right: 0;
             flex-direction: column;
+            transform: translateX(0);
         }
 
         &::before{
