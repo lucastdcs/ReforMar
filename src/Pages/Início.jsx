@@ -67,7 +67,7 @@ const Inicio = () => {
 
   const ContentWrapper = styled.div`
     align-self: flex-start;
-    margin-top: 15vh;
+    margin-top: 30vh;
     margin-left: 15vw;
     max-width: 64rem;
     min-width: fit-content;
@@ -222,7 +222,7 @@ const Inicio = () => {
   return (
     <>
       <StyledContainer>
-        <Header />
+        {/* <Header /> */}
         <ContentWrapper>
           <H2>
             Transforme <br /> seu <span>espaço</span>
@@ -388,8 +388,6 @@ const Inicio = () => {
 
         <Button texto="Entre em contato"/>
       </StyledContainer7>
-      <ContactUs/>
-      <Footer/>
     </>
   );
 };
