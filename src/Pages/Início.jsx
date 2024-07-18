@@ -387,7 +387,7 @@ const Inicio = () => {
         <Button texto="Entre em contato"/>
       </StyledContainer7>
       <ContactUs/>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 };

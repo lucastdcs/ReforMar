@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const StyledSection = styled.section`
     width: 100vw;
     background-color: var(--black);
-    padding-top: 12rem;
+    padding: 12rem 4rem;
+
 
     .form_wrapper{
         max-width: 132rem;
@@ -14,21 +15,67 @@ export const StyledSection = styled.section`
 
     .title_wrapper{
         max-width: 83rem;
+        width: 100%;
     }
 
     .title_wrapper p {
         margin: 5rem 0;
     }
+
+    @media (max-width:960px){
+
+        .form_wrapper {
+            flex-direction: column;
+            text-align: left;
+
+            form {
+                width: 100%;
+                max-width: none;
+                margin: auto;
+                margin-top: 10rem ;
+
+                div {
+                    width: 100%;
+                    max-width: none;
+                }
+            }
+
+            .title_wrapper {
+                text-align: left;
+            }
+
+        }
+
+        .locations_wrapper{
+
+            :nth-child(3){
+                margin-right: 0;
+            }
+
+            div {
+                width: 100%;
+                padding: 10%;
+                margin-top: 5rem;
+
+                p {
+                    margin-right: 0;
+                }
+            }
+        }
+
+    }
 `;
 
 export const StyledForm = styled.form`
     max-width: 38rem;
+    min-width: 31rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
     margin-top: 1rem;
+    margin-left: 4rem;
 
     button {
         width: 100%;

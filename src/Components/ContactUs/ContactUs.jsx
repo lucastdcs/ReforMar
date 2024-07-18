@@ -54,7 +54,7 @@ const ContactUs = () => {
           <Button type="submit" texto="Enviar" />
         </StyledForm>
       </div>
-      <StyledLocations>
+      <StyledLocations className="locations_wrapper">
         <Titles
           text_label="mapa"
           text_title="Locais de Atendimento"
