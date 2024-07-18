@@ -8,12 +8,11 @@ import { Label } from "../../assets/styles/typography.styled.js";
 import Button from "../Button/Button.jsx";
 
 const Header = (props) => {
-
-  const [menuActive, setMenuActive] = useState(false)
+  const [menuActive, setMenuActive] = useState(false);
 
   const toggleMenu = () => {
-    setMenuActive(!menuActive)
-  }
+    setMenuActive(!menuActive);
+  };
 
   const closeMenu = () => {
     setMenuActive(false);
@@ -21,7 +20,9 @@ const Header = (props) => {
   return (
     <StyledHeader textColor={props.textColor}>
       <div className="wrapper">
-        <img src={props.logo} alt="Logotipo" id="logo" />
+        <a href="/">
+          <img src={props.logo} alt="Logotipo" id="logo" />
+        </a>
         <img src={LogoPequeno} alt="Logotipo" id="logo_pequeno" />
         <span>
           <a href="">
@@ -37,7 +38,7 @@ const Header = (props) => {
       </div>
       <div className="wrapper2">
         <StyledNav className={menuActive ? "active" : ""}>
-        <div className="back-arrow" onClick={closeMenu}></div>
+          <div className="back-arrow" onClick={closeMenu}></div>
           <ul>
             <li>
               <Label href="/sobre">Sobre Nós</Label>
