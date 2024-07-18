@@ -42,8 +42,15 @@ const StyledHeader = styled.header`
   span a {
     margin: 0;
     height: min-content;
+
+    
   }
 
+  nav span a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
   #logo {
     max-height: 6rem;
     max-width: 100%; /* Ajusta o logo ao contêiner pai */

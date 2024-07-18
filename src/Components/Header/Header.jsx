@@ -44,16 +44,16 @@ const Header = () => {
         <div className="back-arrow" onClick={closeMenu}></div>
           <ul>
             <li>
-              <Label>Sobre Nós</Label>
+              <Label href="/sobre">Sobre Nós</Label>
             </li>
             <li>
-              <Label>Serviços</Label>
+              <Label href="">Serviços</Label>
             </li>
             <li>
-              <Label>Portfólio</Label>
+              <Label href="">Portfólio</Label>
             </li>
             <li>
-              <Label>Contatos</Label>
+              <Label href="">Contatos</Label>
             </li>
           </ul>
         </StyledNav>
