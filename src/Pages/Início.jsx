@@ -143,6 +143,7 @@ const Inicio = () => {
     width: 100vw;
     color: var(--black);
     text-align: center;
+
   `;
 
   const ValuesGrid = styled.div`
@@ -387,7 +388,7 @@ const Inicio = () => {
         <Button texto="Entre em contato"/>
       </StyledContainer7>
       <ContactUs/>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 };

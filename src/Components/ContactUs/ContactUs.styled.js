@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledSection = styled.section`
     width: 100vw;
     background-color: var(--black);
-    padding: 12rem 4rem;
+    padding: 12rem 4vw;
 
 
     .form_wrapper{
@@ -68,7 +68,7 @@ export const StyledSection = styled.section`
 
 export const StyledForm = styled.form`
     max-width: 38rem;
-    min-width: 31rem;
+    min-width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
