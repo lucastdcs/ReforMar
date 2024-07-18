@@ -26,7 +26,7 @@ import Colaborate from "../assets/icons/values_collaborate.svg";
 import Customer from "../assets/icons/values_customer.svg";
 import Learning from "../assets/icons/values_learning.svg";
 import Quality from "../assets/icons/values_quality.svg";
-import Footer from "../Components/Footer/Footer.jsx";
+import FeedbackSection from "../Components/FeedbackSection/FeedbackSection.jsx";
 
 const Inicio = () => {
   const StyledContainer = styled.section`
@@ -203,21 +203,21 @@ const Inicio = () => {
     margin-bottom: 13rem;
   `;
 
-  const StyledContainer7 = styled.section`
-    width: 100vw;
-    color: var(--black);
-    text-align: center;
-    .project_title {
-      text-align: start;
-      margin-left: 10%;
-    }
-    h2 {margin-bottom: 8rem;}
+  // const StyledContainer7 = styled.section`
+  //   width: 100vw;
+  //   color: var(--black);
+  //   text-align: center;
+  //   .project_title {
+  //     text-align: start;
+  //     margin-left: 10%;
+  //   }
+  //   h2 {margin-bottom: 8rem;}
 
-    button {
-      margin-top: 6rem;
-      margin-bottom: 6rem;
-    }
-  `;
+  //   button {
+  //     margin-top: 6rem;
+  //     margin-bottom: 6rem;
+  //   }
+  // `;
 
   return (
     <>
@@ -369,7 +369,7 @@ const Inicio = () => {
         <NumbersGrid />
         <Button texto="Entre em contato" />
       </StyledContainer6>
-      <StyledContainer7>
+      {/* <StyledContainer7>
         <Titles
           text_label="feedback de clientes"
           text_title="Ouça de nossos"
@@ -387,7 +387,8 @@ const Inicio = () => {
         </Carousel>
 
         <Button texto="Entre em contato"/>
-      </StyledContainer7>
+      </StyledContainer7> */}
+      <FeedbackSection/>
     </>
   );
 };
