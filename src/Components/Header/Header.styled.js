@@ -107,6 +107,7 @@ const StyledHeader = styled.header`
     }
   }
   @media (max-width: 1060px) {
+
     #btn_contact {
       display: none;
     }
@@ -148,8 +149,12 @@ export const StyledNav = styled.nav`
 
     @media (max-width: 1060px) {
 
-        position:relative;
+        position: relative;
         z-index: 1;
+
+        #active {
+          display: none;
+        }
 
         ul {
             list-style: none;
@@ -166,12 +171,10 @@ export const StyledNav = styled.nav`
             top: 0;
             right: -100vw;
             width: 100vw;
-            /* transform: translateX(100%); */
             transition: transform 0.3s ease;
         }
 
         &.active ul {
-            /* transform: translateX(0); */
             right: 0;
             flex-direction: column;
         }

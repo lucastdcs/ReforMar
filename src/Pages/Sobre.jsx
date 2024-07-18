@@ -20,6 +20,7 @@ const Sobre = () => {
     text-align: center;
     display: flex;
     flex-direction: column;
+    /* overflow: hidden; */
 
     section {
       margin-top: 10rem;
@@ -31,6 +32,7 @@ const Sobre = () => {
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      padding: 0 3rem;
     }
 
   `;

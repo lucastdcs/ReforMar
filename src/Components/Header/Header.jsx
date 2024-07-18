@@ -22,8 +22,8 @@ const Header = (props) => {
       <div className="wrapper">
         <a href="/">
           <img src={props.logo} alt="Logotipo" id="logo" />
-        </a>
         <img src={LogoPequeno} alt="Logotipo" id="logo_pequeno" />
+        </a>
         <span>
           <a href="">
             <img src={props.instagramIcon} alt="" />
@@ -39,7 +39,7 @@ const Header = (props) => {
       <div className="wrapper2">
         <StyledNav className={menuActive ? "active" : ""}>
           <div className="back-arrow" onClick={closeMenu}></div>
-          <ul>
+          <ul  id={menuActive ? "" : "active"}>
             <li>
               <Label href="/sobre">Sobre Nós</Label>
             </li>
