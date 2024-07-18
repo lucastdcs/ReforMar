@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "../Components/Header/Header.jsx";
 import Card from "../Components/Card/Card.jsx";
 import backgroundImg from "../assets/imgs/Hero-Img.png";
 import CardExample from "../assets/imgs/CardExample.png";
@@ -11,8 +10,6 @@ import { Text } from "../assets/styles/typography.styled.js";
 import { LabelTitle } from "../assets/styles/typography.styled.js";
 import Button from "../Components/Button/Button.jsx";
 import Badges from "../Components/Badges/Badges.jsx";
-import FeedbackCard from "../Components/FeedbackCard/FeedbackCard.jsx";
-import ContactUs from "../Components/ContactUs/ContactUs.jsx";
 import Carousel from "../Components/Carrousel/Carousel.jsx";
 import Values from "../Components/Values/Values.jsx";
 import NumbersGrid from "../Components/NumbersGrid/NumbersGrid.jsx";
