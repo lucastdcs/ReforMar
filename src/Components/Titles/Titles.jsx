@@ -7,8 +7,8 @@ const Titles = (props) => {
    
   return (
     <>
-      <LabelTitle  className="project_title">{props.text_label}</LabelTitle>
-      <H2 className="project_title">{props.text_title} <span>{props.text_span}</span></H2>
+      <LabelTitle  className="project_title small">{props.text_label}</LabelTitle>
+      <H2 className="project_title big">{props.text_title} <span>{props.text_span}</span></H2>
     </>
   );
 };

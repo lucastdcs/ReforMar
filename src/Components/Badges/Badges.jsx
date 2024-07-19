@@ -7,7 +7,7 @@ import creaspBadge from "../../assets/badges/creasp.svg";
 const Badges = (props) => {
   return (
     <>
-      <StyledContainer>
+      <StyledContainer className={props.className}>
         <figure>
           {" "}
           <img src={googleBadge} alt="" draggable="false"/>
