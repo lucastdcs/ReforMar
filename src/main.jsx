@@ -6,7 +6,7 @@ import Header from "./Components/Header/Header.jsx";
 import ContactUs from "./Components/ContactUs/ContactUs.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import Inicio from "./Pages/Início.jsx";
-import Sobre from "./Pages/Sobre.jsx";
+import Servicos from "./Pages/Servicos.jsx";
 
 // Imagens e ícones
 import Logo from "./assets/icons/Logotipo.svg";
@@ -26,7 +26,7 @@ const Layout = () => {
   const getHeaderProps = () => {
     if (location.pathname === "/") {
       return {
-        textColor: "white",
+        text_color: "white",
         logo: Logo,
         instagramIcon: Instagram,
         whatsappIcon: Whatsapp,
@@ -35,7 +35,7 @@ const Layout = () => {
       };
     } else {
       return {
-        textColor: "black",
+        text_color: "black",
         logo: LogoBlack,
         instagramIcon: InstagramBlack,
         whatsappIcon: WhatsappBlack,
@@ -62,7 +62,7 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: "/", element: <Inicio /> },
-      { path: "sobre", element: <Sobre /> },
+      { path: "servicos", element: <Servicos /> },
     ],
   },
 ]);

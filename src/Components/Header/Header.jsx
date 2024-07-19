@@ -18,7 +18,7 @@ const Header = (props) => {
     setMenuActive(false);
   };
   return (
-    <StyledHeader textColor={props.textColor}>
+    <StyledHeader text_color={props.text_color}>
       <div className="wrapper">
         <a href="/">
           <img src={props.logo} alt="Logotipo" id="logo" />
@@ -41,10 +41,10 @@ const Header = (props) => {
           <div className="back-arrow" onClick={closeMenu}></div>
           <ul  id={menuActive ? "" : "active"}>
             <li>
-              <Label href="/sobre">Sobre Nós</Label>
+              <Label href="">Sobre Nós</Label>
             </li>
             <li>
-              <Label href="">Serviços</Label>
+              <Label href="/servicos">Serviços</Label>
             </li>
             <li>
               <Label href="">Portfólio</Label>

@@ -18,7 +18,7 @@ const StyledHeader = styled.header`
   z-index: 10;
 
   .wrapper2 nav ul li a {
-    color: ${(props) => props.textColor};
+    color: ${(props) => props.text_color};
   }
   .wrapper {
     width: 20%;
