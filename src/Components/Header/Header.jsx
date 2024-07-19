@@ -41,7 +41,7 @@ const Header = (props) => {
           <div className="back-arrow" onClick={closeMenu}></div>
           <ul  id={menuActive ? "" : "active"}>
             <li>
-              <Label href="">Sobre Nós</Label>
+              <Label href="/sobreNos">Sobre Nós</Label>
             </li>
             <li>
               <Label href="/servicos">Serviços</Label>

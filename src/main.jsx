@@ -19,6 +19,7 @@ import Youtube from "./assets/icons/youtube.svg";
 import YoutubeBlack from "./assets/icons/youtubeBlack.svg";
 import Menu from "./assets/icons/Nav-Menu.svg";
 import MenuBlack from "./assets/icons/Nav-MenuBlack.svg";
+import SobreNos from "./Pages/SobreNos.jsx";
 
 const Layout = () => {
   const location = useLocation();
@@ -63,6 +64,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Inicio /> },
       { path: "servicos", element: <Servicos /> },
+      { path: "sobreNos", element: <SobreNos /> },
     ],
   },
 ]);
