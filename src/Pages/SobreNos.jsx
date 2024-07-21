@@ -17,6 +17,7 @@ const SobreNos = () => {
   const StyledSection = styled.section`
     width: 100%;
     padding: 2rem;
+    padding-bottom: 0;
   `;
   const Grid = styled.div`
     max-width: 155rem;
@@ -30,7 +31,6 @@ const SobreNos = () => {
     justify-content: left;
 
     margin: auto;
-    margin-bottom: 10rem;
 
     .small {
       grid-column: 1;
@@ -117,7 +117,7 @@ const SobreNos = () => {
           <img className="guy" src={Guy} alt="" />
         </Grid>
       </StyledSection>
-      <ValuesSection />
+      <ValuesSection text_color="white" black_bg/>
       <FeedbackSection />
     </Main>
   );

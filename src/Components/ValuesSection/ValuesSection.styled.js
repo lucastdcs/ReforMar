@@ -6,7 +6,13 @@ export const StyledContainer = styled.section`
     color: var(--black);
     text-align: center;
     height: max-content;
+    background-color: ${props => (props.black_bg ? "var(--black)" : "transparent")};
+    padding: 12rem 0;
 
+
+    .project_title{
+    color: ${props => (props.black_bg ? "white" : "inherit")}
+    }
 `;
 
 export const ValuesGrid = styled.div`
@@ -18,6 +24,11 @@ export const ValuesGrid = styled.div`
     align-items: center;
     justify-items: center;
     grid-gap: 5rem;
+
+    p {
+      color: ${(props) => props.text_color};
+    }
+
 
     .agile {
       grid-column: 1 / span 2;
