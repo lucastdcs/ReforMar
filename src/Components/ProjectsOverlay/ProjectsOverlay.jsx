@@ -42,6 +42,7 @@ const ProjectsOverlay = (props) => {
           </div>
         </StyledCard>
       ) : (
+        
         <StyledContainer>
           <Overlay>
             <button id="back" onClick={toggleOverlay}>
