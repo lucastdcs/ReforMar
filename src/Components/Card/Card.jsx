@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 import { StyledCard } from "./Card.styled";
 import Button from "../Button/Button";
@@ -24,10 +24,11 @@ const Card = (props) => {
             {props.description}
           </Text>
           <Button texto="Veja Detalhes" className="btn"/>
+
         </div>
       </StyledCard>
 
   );
 };
-
+ 
 export default Card;

@@ -13,6 +13,7 @@ import img1 from "../assets/imgs/ServicesImg.jpg";
 import img2 from "../assets/imgs/ObrasIMG2.jpg";
 import img3 from "../assets/imgs/ObrasIMG3.jpg";
 
+
 const Portfolio = () => {
   const Main = styled.main`
     width: 100vw;
@@ -23,7 +24,7 @@ const Portfolio = () => {
   `;
   const Grid = styled.div`
     position: relative;
-    bottom: -14rem ;
+    bottom: -14rem;
     max-width: 180rem;
     max-height: 60rem;
     display: grid;
@@ -128,7 +129,7 @@ const Portfolio = () => {
             magni. Voluptate voluptatem consequuntur pariatur.
           </Text>
         </div>
-        <Card
+        <ProjectsOverlay
           className="project_card"
           img={CardExample}
           title="Cuba de Cozinha"
@@ -138,7 +139,6 @@ const Portfolio = () => {
           description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
         />
       </Projects>
-      <ProjectsOverlay/>
       <ValuesSection />
       <NumbersSection />
       <FeedbackSection />
