@@ -7,6 +7,7 @@ import Titles from "../Components/Titles/Titles";
 import { Text } from "../assets/styles/typography.styled";
 import Card from "../Components/Card/Card.jsx";
 import CardExample from "../assets/imgs/CardExample.png";
+import ProjectsOverlay from "../Components/ProjectsOverlay/ProjectsOverlay.jsx";
 
 import img1 from "../assets/imgs/ServicesImg.jpg";
 import img2 from "../assets/imgs/ObrasIMG2.jpg";
@@ -137,6 +138,7 @@ const Portfolio = () => {
           description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
         />
       </Projects>
+      <ProjectsOverlay/>
       <ValuesSection />
       <NumbersSection />
       <FeedbackSection />
