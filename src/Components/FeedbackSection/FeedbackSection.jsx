@@ -18,10 +18,6 @@ const FeedbackSection = () => {
         <FeedbackCard />
         <FeedbackCard />
         <FeedbackCard />
-        <FeedbackCard />
-        <FeedbackCard />
-        <FeedbackCard />
-        <FeedbackCard />
       </Carousel>
 
       <Button texto="Entre em contato" />

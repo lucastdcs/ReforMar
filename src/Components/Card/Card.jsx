@@ -7,8 +7,8 @@ import { Text } from "../../assets/styles/typography.styled";
 
 const Card = (props) => {
   return (
-    <>
-      <StyledCard>
+
+      <StyledCard className={props.className}>
         <img src={props.img} alt="" />
 
         <div className="wrapper">
@@ -26,7 +26,7 @@ const Card = (props) => {
           <Button texto="Veja Detalhes" className="btn"/>
         </div>
       </StyledCard>
-    </>
+
   );
 };
 

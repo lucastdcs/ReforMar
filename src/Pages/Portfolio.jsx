@@ -1,9 +1,13 @@
 import React from "react";
+import styled from "styled-components";
 import FeedbackSection from "../Components/FeedbackSection/FeedbackSection";
 import ValuesSection from "../Components/ValuesSection/ValuesSection";
 import NumbersSection from "../Components/NumbersSection/NumbersSection";
 import Titles from "../Components/Titles/Titles";
-import styled from "styled-components";
+import { Text } from "../assets/styles/typography.styled";
+import Card from "../Components/Card/Card.jsx";
+import CardExample from "../assets/imgs/CardExample.png";
+
 import img1 from "../assets/imgs/ServicesImg.jpg";
 import img2 from "../assets/imgs/ObrasIMG2.jpg";
 import img3 from "../assets/imgs/ObrasIMG3.jpg";
@@ -17,12 +21,14 @@ const Portfolio = () => {
     height: fit-content;
   `;
   const Grid = styled.div`
+    position: relative;
+    bottom: -14rem ;
     max-width: 180rem;
     max-height: 60rem;
     display: grid;
     grid-template-columns: 3fr 2fr 1fr;
     grid-gap: 1rem;
-    margin: 8rem auto;
+    margin: auto;
     padding: 1rem;
 
     img {
@@ -50,11 +56,11 @@ const Portfolio = () => {
     @media (max-width: 800px) {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(20rem, 3);
-        max-height: fit-content;
+      max-height: fit-content;
 
-        img {
-            height: 20rem;
-        }
+      img {
+        height: 20rem;
+      }
       .img1 {
         grid-column: 1;
         grid-row: 1;
@@ -71,6 +77,29 @@ const Portfolio = () => {
       }
     }
   `;
+  const Projects = styled.section`
+    width: 100vw;
+    padding-top: 30rem;
+    padding-bottom: 10rem;
+    background-color: var(--black);
+    color: var(--off-white);
+
+    p {
+      margin: 6rem 0;
+    }
+
+    .text_wrapper {
+      max-width: 90rem;
+      margin: auto;
+    }
+    .project_card {
+      text-align: left;
+      border: 1px solid var(--off-white);
+      margin: auto;
+      max-width: 130rem;
+      border-radius: 4rem;
+    }
+  `;
   return (
     <Main>
       <Titles
@@ -84,6 +113,30 @@ const Portfolio = () => {
         <img src={img2} alt="" className="img2" />
         <img src={img3} alt="" className="img3" />
       </Grid>
+      <Projects>
+        <div className="text_wrapper">
+          <Titles
+            text_label=""
+            text_title="Projetos do Início ao Magnífico"
+            text_span=""
+          />
+          <Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem doloribus provident autem ducimus maxime eligendi
+            recusandae iure corrupti molestiae expedita amet vel, nihil cum a
+            magni. Voluptate voluptatem consequuntur pariatur.
+          </Text>
+        </div>
+        <Card
+          className="project_card"
+          img={CardExample}
+          title="Cuba de Cozinha"
+          area="30m²"
+          type="Residência"
+          location="Santos - SP"
+          description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
+        />
+      </Projects>
       <ValuesSection />
       <NumbersSection />
       <FeedbackSection />
