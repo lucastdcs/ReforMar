@@ -47,7 +47,7 @@ const Header = (props) => {
               <Label href="/servicos">Serviços</Label>
             </li>
             <li>
-              <Label href="">Portfólio</Label>
+              <Label href="/portfolio">Portfólio</Label>
             </li>
             <li>
               <Label href="">Contatos</Label>

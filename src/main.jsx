@@ -7,6 +7,7 @@ import ContactUs from "./Components/ContactUs/ContactUs.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import Inicio from "./Pages/Início.jsx";
 import Servicos from "./Pages/Servicos.jsx";
+import Portfolio from "./Pages/Portfolio.jsx";
 
 // Imagens e ícones
 import Logo from "./assets/icons/Logotipo.svg";
@@ -65,6 +66,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Inicio /> },
       { path: "servicos", element: <Servicos /> },
       { path: "sobreNos", element: <SobreNos /> },
+      { path: "portfolio", element: <Portfolio /> },
     ],
   },
 ]);

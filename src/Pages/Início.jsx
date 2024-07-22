@@ -21,6 +21,7 @@ import Porch from "../assets/icons/services_porch.svg";
 
 import FeedbackSection from "../Components/FeedbackSection/FeedbackSection.jsx";
 import ValuesSection from "../Components/ValuesSection/ValuesSection.jsx";
+import NumbersSection from "../Components/NumbersSection/NumbersSection.jsx";
 
 const Inicio = () => {
   const StyledContainer = styled.section`
@@ -133,15 +134,6 @@ const Inicio = () => {
     }
   `;
 
-  const StyledContainer6 = styled.section`
-    width: 100vw;
-    color: var(--black);
-    text-align: center;
-    h2 {
-      margin-top: 8rem;
-    }
-    margin-bottom: 13rem;
-  `;
 
 
   return (
@@ -247,12 +239,8 @@ const Inicio = () => {
           />
         </ServicesGrid>
       </StyledContainer4>
+      <NumbersSection/>
       <ValuesSection/>
-      <StyledContainer6>
-        <Titles text_label="" text_title="Nossos" text_span="Números:" />
-        <NumbersGrid />
-        <Button texto="Entre em contato" />
-      </StyledContainer6>
       <FeedbackSection/>
     </>
   );
