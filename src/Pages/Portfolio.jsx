@@ -133,6 +133,9 @@ const Portfolio = () => {
           className="project_card"
           img={CardExample}
           title="Cuba de Cozinha"
+          feedbackStars="4"
+          duration="1 Semana"
+          year="2023"
           area="30m²"
           type="Residência"
           location="Santos - SP"
