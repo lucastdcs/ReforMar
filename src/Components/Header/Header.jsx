@@ -50,7 +50,7 @@ const Header = (props) => {
               <Label href="/portfolio">Portfólio</Label>
             </li>
             <li>
-              <Label href="">Contatos</Label>
+              <Label href="/contato">Contatos</Label>
             </li>
           </ul>
         </StyledNav>

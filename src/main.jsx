@@ -8,6 +8,7 @@ import Footer from "./Components/Footer/Footer.jsx";
 import Inicio from "./Pages/Início.jsx";
 import Servicos from "./Pages/Servicos.jsx";
 import Portfolio from "./Pages/Portfolio.jsx";
+import Contact from "./Pages/Contact.jsx";
 
 // Imagens e ícones
 import Logo from "./assets/icons/Logotipo.svg";
@@ -26,7 +27,7 @@ const Layout = () => {
   const location = useLocation();
 
   const getHeaderProps = () => {
-    if (location.pathname === "/") {
+    if (location.pathname === "/" || location.pathname === "/contato") {
       return {
         text_color: "white",
         logo: Logo,
@@ -67,6 +68,7 @@ const router = createBrowserRouter([
       { path: "servicos", element: <Servicos /> },
       { path: "sobreNos", element: <SobreNos /> },
       { path: "portfolio", element: <Portfolio /> },
+      { path: "contato", element: <Contact /> },
     ],
   },
 ]);
