@@ -5,9 +5,9 @@ import ValuesSection from "../Components/ValuesSection/ValuesSection";
 import NumbersSection from "../Components/NumbersSection/NumbersSection";
 import Titles from "../Components/Titles/Titles";
 import { Text } from "../assets/styles/typography.styled";
-import Card from "../Components/Card/Card.jsx";
 import CardExample from "../assets/imgs/CardExample.png";
 import ProjectsOverlay from "../Components/ProjectsOverlay/ProjectsOverlay.jsx";
+import Transition from "../Components/Transitions/Transitions.jsx";
 
 import img1 from "../assets/imgs/ServicesImg.jpg";
 import img2 from "../assets/imgs/ObrasIMG2.jpg";
@@ -149,4 +149,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Transition(Portfolio);

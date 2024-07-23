@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {Navigate, useNavigate} from 'react-router-dom'
 import styled from "styled-components";
 import { StyledCard } from "./Card.styled";
 import Button from "../Button/Button";
@@ -6,6 +7,10 @@ import { H5 } from "../../assets/styles/typography.styled";
 import { Text } from "../../assets/styles/typography.styled";
 
 const Card = (props) => {
+  const navigate = useNavigate()
+  const redirect = () => {
+    navigate('/portfolio')
+  }
   return (
 
       <StyledCard className={props.className}>
@@ -23,7 +28,7 @@ const Card = (props) => {
             Desafio: <br />
             {props.description}
           </Text>
-          <Button texto="Veja Detalhes" className="btn"/>
+          <Button texto="Veja Detalhes" className="btn" onClick={redirect}/>
 
         </div>
       </StyledCard>

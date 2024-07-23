@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledCard = styled.div`
     margin-top: 8rem;
     margin-bottom: 2rem;
-    max-width: 100rem;
+    width: 100rem;
     height: fit-content;
     background-color: var(--black);
     border-radius: 2rem;
@@ -55,8 +55,8 @@ export const StyledCard = styled.div`
     }
 
 
-    @media (max-width:1050px){
-        width: fit-content;
+    @media (max-width:900px){
+        width: 90vw;
         height: 48rem;
        
         .wrapper {

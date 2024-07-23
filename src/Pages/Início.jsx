@@ -11,8 +11,8 @@ import { LabelTitle } from "../assets/styles/typography.styled.js";
 import Button from "../Components/Button/Button.jsx";
 import Badges from "../Components/Badges/Badges.jsx";
 import Carousel from "../Components/Carrousel/Carousel.jsx";
-import Values from "../Components/Values/Values.jsx";
-import NumbersGrid from "../Components/NumbersGrid/NumbersGrid.jsx";
+
+import CarouselNew from "../Components/MotionCarousel/MotionCarousel.jsx";
 import Kitchen from "../assets/icons/services_kitchen.svg";
 import Bath from "../assets/icons/services_bath.svg";
 import Barbecue from "../assets/icons/services_barbecue.svg";
@@ -22,6 +22,7 @@ import Porch from "../assets/icons/services_porch.svg";
 import FeedbackSection from "../Components/FeedbackSection/FeedbackSection.jsx";
 import ValuesSection from "../Components/ValuesSection/ValuesSection.jsx";
 import NumbersSection from "../Components/NumbersSection/NumbersSection.jsx";
+import Transition from "../Components/Transitions/Transitions.jsx";
 
 const Inicio = () => {
   const StyledContainer = styled.section`
@@ -89,8 +90,6 @@ const Inicio = () => {
   const StyledContainer3 = styled.section`
     width: 100vw;
     color: var(--black);
-    padding-left: 2rem;
-    padding-right: 2rem;
     padding-bottom: 10rem;
 
     .project_title {
@@ -160,7 +159,7 @@ const Inicio = () => {
           text_title="Projetos"
           text_span="Exclusivos"
         />
-        <Carousel>
+        <CarouselNew>
           <Card
             img={CardExample}
             title="Cuba de Cozinha"
@@ -201,7 +200,7 @@ const Inicio = () => {
             location="Santos - SP"
             description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
           />
-        </Carousel>
+        </CarouselNew>
       </StyledContainer3>
       <StyledContainer4>
         <Titles
@@ -246,4 +245,4 @@ const Inicio = () => {
   );
 };
 
-export default Inicio;
+export default Transition(Inicio);

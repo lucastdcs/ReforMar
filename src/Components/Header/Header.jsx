@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
+import { useNavigate } from "react-router-dom";
 import LogoPequeno from "../../assets/icons/LogotipoSmall.svg";
 import StyledHeader from "./Header.styled.js";
 import { StyledNav } from "./Header.styled.js";
@@ -17,6 +18,11 @@ const Header = (props) => {
   const closeMenu = () => {
     setMenuActive(false);
   };
+  
+  const navigate = useNavigate()
+  const redirect = () => {
+    navigate('/contato')
+  }
   return (
     <StyledHeader text_color={props.text_color}>
       <div className="wrapper">
@@ -54,7 +60,7 @@ const Header = (props) => {
             </li>
           </ul>
         </StyledNav>
-        <Button texto="Entre em contato" />
+        <Button texto="Entre em contato" onClick={redirect}/>
         <StyledNavButton id="nav_menu" onClick={toggleMenu}>
           <img src={props.menuIcon} alt="" />
         </StyledNavButton>

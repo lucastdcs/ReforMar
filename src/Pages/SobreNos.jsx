@@ -6,6 +6,7 @@ import Titles from "../Components/Titles/Titles";
 import { Text } from "../assets/styles/typography.styled";
 import Badges from "../Components/Badges/Badges";
 import Guy from "../assets/imgs/AboutGuy.jpg";
+import Transition from "../Components/Transitions/Transitions";
 
 const SobreNos = () => {
   const Main = styled.main`
@@ -123,4 +124,4 @@ const SobreNos = () => {
   );
 };
 
-export default SobreNos;
+export default Transition(SobreNos);

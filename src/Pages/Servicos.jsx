@@ -11,6 +11,7 @@ import Laundry from "../assets/icons/services_laundry.svg";
 import Porch from "../assets/icons/services_porch.svg";
 
 import KithchenImg from "../assets/imgs/ServicesImg.jpg";
+import Transition from "../Components/Transitions/Transitions";
 
 const Sobre = () => {
   const StyledMain = styled.main`
@@ -87,4 +88,4 @@ const Sobre = () => {
   );
 };
 
-export default Sobre;
+export default Transition(Sobre);

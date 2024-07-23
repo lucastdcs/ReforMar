@@ -15,12 +15,11 @@ import Quality from "../../assets/icons/values_quality.svg";
 import QualityWhite from "../../assets/icons/values_quality_white.svg";
 
 const ValuesSection = (props) => {
-
-  const agileSrc = props.black_bg ? AgileWhite : Agile
-  const collaborateSrc = props.black_bg ? ColaborateWhite : Colaborate
-  const customerSrc = props.black_bg ? CustomerWhite : Customer
-  const learningSrc = props.black_bg ? LearningWhite : Learning
-  const qualitySrc = props.black_bg ? QualityWhite : Quality
+  const agileSrc = props.black_bg ? AgileWhite : Agile;
+  const collaborateSrc = props.black_bg ? ColaborateWhite : Colaborate;
+  const customerSrc = props.black_bg ? CustomerWhite : Customer;
+  const learningSrc = props.black_bg ? LearningWhite : Learning;
+  const qualitySrc = props.black_bg ? QualityWhite : Quality;
   return (
     <StyledContainer black_bg={props.black_bg}>
       <Titles
