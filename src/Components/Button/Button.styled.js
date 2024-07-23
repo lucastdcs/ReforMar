@@ -1,7 +1,8 @@
 import styled, {css} from "styled-components";
+import { motion } from "framer-motion";
 import "../../assets/styles/base/variables.css"
 
-const StyledButton = styled.button`
+const StyledButton = styled(motion.button)`
     max-width: 26rem;
     min-width: 16rem;
     max-height: 7rem; /* Valor base */
@@ -21,7 +22,7 @@ const StyledButton = styled.button`
     cursor: pointer;
 
     color: white;
-    ${props => props.variant === 'outline' && css`
+    ${props => props.variantType === 'outline' && css`
         background-color: transparent;
         border: 2px solid white;
     `}

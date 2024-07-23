@@ -15,7 +15,7 @@ const ServicesCard = (props) => {
         <H4>{props.title}</H4>
         <Text>{props.text}</Text>
         <div>
-          <Button texto="Entre em contato" variant="outline" />
+          <Button texto="Entre em contato" variantType="outline" />
           <Button texto="Veja nosso portfólio" />
         </div>
       </StyledServicesCard>

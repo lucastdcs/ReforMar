@@ -26,7 +26,7 @@ const ContactUs = () => {
             Escreva ao lado uma mensagem <br /> para nós e entraremos em
             contato!
           </Text>
-          <Button texto="Veja outros contatos" variant="outline" />
+          <Button texto="Veja outros contatos" variantType="outline" />
         </div>
         <StyledForm>
           <StyledInput placeholder="Seu Nome" />
