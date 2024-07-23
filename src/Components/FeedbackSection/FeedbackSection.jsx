@@ -2,6 +2,7 @@ import React from "react";
 import { StyledContainer } from "./FeedbackSection.styled";
 import Titles from "../Titles/Titles";
 import Carousel from "../Carrousel/Carousel";
+import CarouselNew from "../MotionCarousel/MotionCarousel";
 import FeedbackCard from "../FeedbackCard/FeedbackCard";
 import Button from "../Button/Button";
 
@@ -14,11 +15,20 @@ const FeedbackSection = () => {
         text_span="clientes satisfeitos!"
       />
 
-      <Carousel>
+      <CarouselNew>
         <FeedbackCard />
         <FeedbackCard />
         <FeedbackCard />
-      </Carousel>
+        <FeedbackCard />
+        <FeedbackCard />
+        <FeedbackCard />
+        <FeedbackCard />
+        <FeedbackCard />
+        <FeedbackCard />
+        <FeedbackCard />
+        <FeedbackCard />
+        <FeedbackCard />
+      </CarouselNew>
 
       <Button texto="Entre em contato" />
     </StyledContainer>
