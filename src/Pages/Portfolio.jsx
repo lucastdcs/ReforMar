@@ -8,7 +8,7 @@ import { Text } from "../assets/styles/typography.styled";
 import CardExample from "../assets/imgs/CardExample.png";
 import ProjectsOverlay from "../Components/ProjectsOverlay/ProjectsOverlay.jsx";
 import Transition from "../Components/Transitions/Transitions.jsx";
-
+import Card from "../Components/Card/Card.jsx";
 import img1 from "../assets/imgs/ServicesImg.jpg";
 import img2 from "../assets/imgs/ObrasIMG2.jpg";
 import img3 from "../assets/imgs/ObrasIMG3.jpg";
@@ -129,7 +129,7 @@ const Portfolio = () => {
             magni. Voluptate voluptatem consequuntur pariatur.
           </Text>
         </div>
-        <ProjectsOverlay
+        <Card
           className="project_card"
           img={CardExample}
           title="Cuba de Cozinha"
@@ -140,6 +140,7 @@ const Portfolio = () => {
           type="Residência"
           location="Santos - SP"
           description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
+          overlay
         />
       </Projects>
       <ValuesSection />
