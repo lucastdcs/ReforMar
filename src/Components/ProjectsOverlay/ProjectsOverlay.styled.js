@@ -14,8 +14,8 @@ export const StyledContainer = styled.div`
 export const Overlay = styled.section`
     position: absolute;
     left: 50%;
-    top: 100%;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    transform: translate(-50%, 0%);
     max-width: 90vw;
     min-width: 140rem;
     background-color: var(--black);
@@ -24,6 +24,7 @@ export const Overlay = styled.section`
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 
     color: var(--off-white);
@@ -69,6 +70,56 @@ export const Overlay = styled.section`
         }
     }
 
+    .preview {
+        margin: 8rem 0;
+        max-width: 132rem;
+
+        img {
+            min-width: 100rem;
+            width: 100%;
+            pointer-events: none;
+            border-radius: 2rem;
+        }
+    }
+
+    .photos_grid {
+        margin: 8rem 0;
+        max-width: 132rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto ;
+        grid-gap: 2rem;
+
+        img {
+            width: 100%;
+            border-radius: 2rem;
+        }
+
+        ._img1{
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        }
+
+        ._img2{
+            grid-column: 1 / span 2;
+            grid-row: 2;
+        }
+
+        ._img3{
+            grid-column: 1 ;
+            grid-row: 3;
+        }
+
+        ._img4{
+            grid-column: 2 ;
+            grid-row: 3;
+        }
+
+        ._img5{
+            grid-column: 1 / span 2 ;
+            grid-row: 4;
+        }
+    }
 `;
 
 

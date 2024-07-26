@@ -7,13 +7,16 @@ import { H5 } from "../../assets/styles/typography.styled.js";
 import Button from "../Button/Button.jsx";
 import { LabelTitle, H4, Text } from "../../assets/styles/typography.styled.js";
 import CardExample from "../../assets/imgs/CardExample.png";
+import CarouselNew from "../MotionCarousel/MotionCarousel.jsx";
 
+import Antes from "../../assets/imgs/PortfolioP1Antes.jpg";
+import Depois from "../../assets/imgs/PortfolioP1Depois.jpg";
+import Durante from "../../assets/imgs/PortfolioP1Durante.jpg";
 const ProjectsOverlay = (props) => {
-
   return (
     <StyledContainer>
       <Overlay>
-        <button id="back" onClick={toggleOverlay}>
+        <button id="back">
           <LabelTitle>Voltar</LabelTitle>
         </button>
         <Titles
@@ -54,6 +57,25 @@ const ProjectsOverlay = (props) => {
           <Text>{props.description}</Text>
         </div>
         <Titles text_label="" text_title="Antes & Depois" text_span="" />
+        <div className="preview">
+          <CarouselNew>
+              <img src={Antes} alt="" />
+              <img src={Depois} alt="" />
+          </CarouselNew>
+        </div>
+
+        <Titles text_label="" text_title="Mais fotos" text_span="" />
+
+        <div className="photos_grid">
+          <img className="_img1" src={Antes} alt="" />
+          <img className="_img2" src={Depois} alt="" />
+          <img className="_img3" src={Antes} alt="" />
+          <img className="_img4" src={Depois} alt="" />
+          <img className="_img5" src={Durante} alt="" />
+        </div>
+
+        <Button texto="Entre em contato"/>
+
         <H4>Veja mais projetos</H4>
         <Card
           className="project_card"
