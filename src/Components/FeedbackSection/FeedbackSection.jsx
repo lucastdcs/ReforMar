@@ -30,7 +30,7 @@ const FeedbackSection = () => {
         <FeedbackCard />
       </CarouselNew>
 
-      <Button texto="Entre em contato" />
+      <Button texto="Entre em contato" destino="contato"/>
     </StyledContainer>
   );
 };

@@ -19,10 +19,7 @@ const Header = (props) => {
     setMenuActive(false);
   };
   
-  const navigate = useNavigate()
-  const redirect = () => {
-    navigate('/contato')
-  }
+
   return (
     <StyledHeader text_color={props.text_color}>
       <div className="wrapper">
@@ -31,14 +28,14 @@ const Header = (props) => {
         <img src={LogoPequeno} alt="Logotipo" id="logo_pequeno" />
         </a>
         <span>
-          <a href="">
-            <img src={props.instagramIcon} alt="" />
+          <a href="https://www.instagram.com/reformarobras/">
+            <img src={props.instagramIcon} alt="Logo do Instagram" />
+          </a>
+          <a href="https://www.youtube.com/@reformarobrasexpress">
+            <img src={props.youtubeIcon} alt="Logo do Youtube" />
           </a>
           <a href="">
-            <img src={props.youtubeIcon} alt="" />
-          </a>
-          <a href="">
-            <img src={props.whatsappIcon} alt="" />
+            <img src={props.whatsappIcon} alt="Logo do Whatsapp" />
           </a>
         </span>
       </div>
@@ -60,7 +57,7 @@ const Header = (props) => {
             </li>
           </ul>
         </StyledNav>
-        <Button texto="Entre em contato" onClick={redirect}/>
+        <Button texto="Entre em contato" destino="contato"/>
         <StyledNavButton id="nav_menu" onClick={toggleMenu}>
           <img src={props.menuIcon} alt="" />
         </StyledNavButton>

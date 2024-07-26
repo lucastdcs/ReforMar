@@ -146,7 +146,7 @@ const Inicio = () => {
             Inovação e excelência em reformas residenciais <br /> com ReforMar
             Obras Express!
           </Text>
-          <Button texto="Veja nossos serviços" />
+          <Button texto="Veja nossos serviços" destino="servicos"/>
         </ContentWrapper>
       </StyledContainer>
       <StyledContainer2>
@@ -167,6 +167,7 @@ const Inicio = () => {
             type="Residência"
             location="Santos - SP"
             description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
+            destino="portfolio"
           />
           <Card
             img={CardExample}
@@ -175,6 +176,8 @@ const Inicio = () => {
             type="Residência"
             location="Santos - SP"
             description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
+            destino="portfolio"
+
           />
           <Card
             img={CardExample}
@@ -183,6 +186,8 @@ const Inicio = () => {
             type="Residência"
             location="Santos - SP"
             description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
+            destino="portfolio"
+
           />
           <Card
             img={CardExample}
@@ -191,6 +196,8 @@ const Inicio = () => {
             type="Residência"
             location="Santos - SP"
             description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
+            destino="portfolio"
+
           />
           <Card
             img={CardExample}
@@ -199,6 +206,8 @@ const Inicio = () => {
             type="Residência"
             location="Santos - SP"
             description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
+            destino="portfolio"
+
           />
         </CarouselNew>
       </StyledContainer3>

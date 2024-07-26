@@ -12,7 +12,7 @@ import Card from "../Components/Card/Card.jsx";
 import img1 from "../assets/imgs/ServicesImg.jpg";
 import img2 from "../assets/imgs/ObrasIMG2.jpg";
 import img3 from "../assets/imgs/ObrasIMG3.jpg";
-
+import CarouselNew from "../Components/MotionCarousel/MotionCarousel.jsx";
 
 const Portfolio = () => {
   const Main = styled.main`
@@ -81,6 +81,7 @@ const Portfolio = () => {
   `;
   const Projects = styled.section`
     width: 100vw;
+    height: fit-content;
     padding-top: 30rem;
     padding-bottom: 10rem;
     background-color: var(--black);
@@ -97,9 +98,12 @@ const Portfolio = () => {
     .project_card {
       text-align: left;
       border: 1px solid var(--off-white);
-      margin: auto;
       max-width: 130rem;
       border-radius: 4rem;
+      /* height: fit-content; */
+      p {
+        margin: 0;
+      }
     }
   `;
   return (
@@ -129,19 +133,34 @@ const Portfolio = () => {
             magni. Voluptate voluptatem consequuntur pariatur.
           </Text>
         </div>
-        <Card
-          className="project_card"
-          img={CardExample}
-          title="Cuba de Cozinha"
-          feedbackStars="4"
-          duration="1 Semana"
-          year="2023"
-          area="30m²"
-          type="Residência"
-          location="Santos - SP"
-          description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
-          overlay
-        />
+        <CarouselNew>
+          <Card
+            className="project_card"
+            img={CardExample}
+            title="Cuba de Cozinha"
+            feedbackStars="4"
+            duration="1 Semana"
+            year="2023"
+            area="30m²"
+            type="Residência"
+            location="Santos - SP"
+            description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
+            overlay
+          />
+          <Card
+            className="project_card"
+            img={CardExample}
+            title="Cuba de Cozinha"
+            feedbackStars="4"
+            duration="1 Semana"
+            year="2023"
+            area="30m²"
+            type="Residência"
+            location="Santos - SP"
+            description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
+            overlay
+          />
+        </CarouselNew>
       </Projects>
       <ValuesSection />
       <NumbersSection />

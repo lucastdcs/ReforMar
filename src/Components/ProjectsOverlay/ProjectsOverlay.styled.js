@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const StyledContainer = styled.div`
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100vw;
@@ -16,8 +16,8 @@ export const Overlay = styled.section`
     left: 50%;
     top: 50%;
     transform: translate(-50%, 0%);
-    max-width: 90vw;
-    min-width: 140rem;
+    width: 90vw;
+    overflow-x: hidden;
     background-color: var(--black);
     border-radius: 4rem;
     padding: 4rem;
@@ -118,6 +118,11 @@ export const Overlay = styled.section`
         ._img5{
             grid-column: 1 / span 2 ;
             grid-row: 4;
+        }
+    }
+    .more {
+        h3 {
+            margin: 5rem 0;
         }
     }
 `;

@@ -59,7 +59,7 @@ const ValuesSection = (props) => {
           title="Aprendizado Contínuo"
           text="Estamos comprometidos com o aprimoramento constante. Buscamos sempre aprender com cada projeto, identificando áreas de melhoria e implementando novas técnicas e tecnologias. Nosso compromisso com o aprendizado contínuo nos permite oferecer serviços cada vez melhores aos nossos clientes."
         />
-        <Button className="btn" texto="Veja Detalhes" />
+        <Button className="btn" texto="Veja Detalhes" destino="portfolio"/>
       </ValuesGrid>
     </StyledContainer>
   );

@@ -13,14 +13,14 @@ const Footer = () => {
         <div className="wrapper">
           <div className="socials_wrapper">
             <span>
-              <a href="">
-                <img src={instagram} alt="" />
+              <a href="https://www.instagram.com/reformarobras/">
+                <img src={instagram} alt="Logo do Instagram" />
+              </a>
+              <a href="https://www.youtube.com/@reformarobrasexpress">
+                <img src={youtube} alt="Logo do Youtube" />
               </a>
               <a href="">
-                <img src={youtube} alt="" />
-              </a>
-              <a href="">
-                <img src={whatsapp} alt="" />
+                <img src={whatsapp} alt="Logo do Whatsapp" />
               </a>
             </span>
             <img src={logo} alt="" />

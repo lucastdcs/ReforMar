@@ -9,7 +9,7 @@ const NumbersSection = () => {
     <StyledContainer>
       <Titles text_label="" text_title="Nossos" text_span="Números:" />
       <NumbersGrid />
-      <Button texto="Entre em contato" />
+      <Button texto="Entre em contato" destino="contato"/>
     </StyledContainer>
   );
 };

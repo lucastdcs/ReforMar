@@ -16,6 +16,7 @@ export const StyledCard = styled.div`
         height: 40rem;
         object-fit: cover;
         border-radius: 1.3rem;
+        pointer-events: none;
     }
     h3 {
         margin-bottom: 2rem;
@@ -27,7 +28,7 @@ export const StyledCard = styled.div`
         margin-right: 8rem;
     }
 
-    .wrapper{
+    .card_wrapper{
         display: grid;
         grid-template-areas:
             'title title title'
@@ -59,7 +60,7 @@ export const StyledCard = styled.div`
         width: 90vw;
         height: 48rem;
        
-        .wrapper {
+        .card_wrapper {
         display: flex;
         flex-direction: column;
         margin-left: 1.5rem;

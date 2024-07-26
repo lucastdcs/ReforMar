@@ -12,11 +12,12 @@ import CarouselNew from "../MotionCarousel/MotionCarousel.jsx";
 import Antes from "../../assets/imgs/PortfolioP1Antes.jpg";
 import Depois from "../../assets/imgs/PortfolioP1Depois.jpg";
 import Durante from "../../assets/imgs/PortfolioP1Durante.jpg";
+
 const ProjectsOverlay = (props) => {
   return (
     <StyledContainer>
       <Overlay>
-        <button id="back">
+        <button id="back" onClick={props.onClick}>
           <LabelTitle>Voltar</LabelTitle>
         </button>
         <Titles
@@ -59,8 +60,8 @@ const ProjectsOverlay = (props) => {
         <Titles text_label="" text_title="Antes & Depois" text_span="" />
         <div className="preview">
           <CarouselNew>
-              <img src={Antes} alt="" />
-              <img src={Depois} alt="" />
+            <img src={Antes} alt="" />
+            <img src={Depois} alt="" />
           </CarouselNew>
         </div>
 
@@ -74,18 +75,20 @@ const ProjectsOverlay = (props) => {
           <img className="_img5" src={Durante} alt="" />
         </div>
 
-        <Button texto="Entre em contato"/>
+        <Button texto="Entre em contato" />
 
-        <H4>Veja mais projetos</H4>
-        <Card
-          className="project_card"
-          img={CardExample}
-          title="Cuba de Cozinha"
-          area="30m²"
-          type="Residência"
-          location="Santos - SP"
-          description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
-        />
+        <div className="more">
+          <H4>Veja mais projetos</H4>
+          <Card
+            className="project_card"
+            img={CardExample}
+            title="Cuba de Cozinha"
+            area="30m²"
+            type="Residência"
+            location="Santos - SP"
+            description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
+          />
+        </div>
       </Overlay>
     </StyledContainer>
   );

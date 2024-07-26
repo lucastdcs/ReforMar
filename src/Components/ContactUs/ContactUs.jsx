@@ -79,7 +79,7 @@ const ContactUs = () => {
           </svg>
           <H3>São Paulo</H3>
           <Text>São Paulo Capital e Região Metropolitana</Text>
-          <Button texto="Contate agora" />
+          <Button texto="Contate agora" destino="contato"/>
         </StyledLocationsCard>
         <StyledLocationsCard>
           <svg
@@ -100,7 +100,7 @@ const ContactUs = () => {
           </svg>
           <H3>São Vicente</H3>
           <Text>São Vicente, Baixada Santista e Região</Text>
-          <Button texto="Contate agora" />
+          <Button texto="Contate agora" destino="contato"/>
         </StyledLocationsCard>
       </StyledLocations>
     </StyledSection>
