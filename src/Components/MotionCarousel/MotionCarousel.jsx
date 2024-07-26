@@ -5,10 +5,20 @@ const CarouselNew = ({ children }) => {
   const carousel = useRef();
   const [width, setWidth] = useState(0);
 
+  const updateWidth = () => {
+    if (carousel.current) {
+      const scrollWidth = carousel.current.scrollWidth;
+      const offsetWidth = carousel.current.offsetWidth;
+      setWidth(scrollWidth - offsetWidth);
+    }
+  };
+
   useEffect(() => {
-    console.log(carousel.current?.scrollWidth, carousel.current?.offsetWidth);
-    setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
   }, []);
+
   return (
     <>
       <StyledCarouselNew ref={carousel} whileTap={{ cursor: "grabbing" }}>
@@ -23,3 +33,4 @@ const CarouselNew = ({ children }) => {
 };
 
 export default CarouselNew;
+

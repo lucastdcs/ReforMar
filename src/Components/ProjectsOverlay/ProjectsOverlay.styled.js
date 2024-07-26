@@ -17,7 +17,8 @@ export const Overlay = styled.section`
     top: 50%;
     transform: translate(-50%, 0%);
     width: 90vw;
-    overflow-x: hidden;
+    height: fit-content;
+    overflow: hidden;
     background-color: var(--black);
     border-radius: 4rem;
     padding: 4rem;
@@ -46,14 +47,20 @@ export const Overlay = styled.section`
         max-width: 77rem;
         margin: auto;
         margin-bottom: 6rem;
+
+        p {
+            margin: 0;
+        }
     }
     
     .project_card {
       text-align: left;
       border: 1px solid var(--off-white);
       margin: auto;
-      max-width: 130rem;
+        width: 95%;
+        height: auto;
       border-radius: 4rem;
+      margin-bottom: 5rem;
     }
 
     #back{
@@ -119,6 +126,7 @@ export const Overlay = styled.section`
             grid-column: 1 / span 2 ;
             grid-row: 4;
         }
+
     }
     .more {
         h3 {

@@ -60,19 +60,19 @@ const ProjectsOverlay = (props) => {
         <Titles text_label="" text_title="Antes & Depois" text_span="" />
         <div className="preview">
           <CarouselNew>
-            <img src={Antes} alt="" />
-            <img src={Depois} alt="" />
+            <img src={props.antes} alt="" />
+            <img src={props.depois} alt="" />
           </CarouselNew>
         </div>
 
         <Titles text_label="" text_title="Mais fotos" text_span="" />
 
         <div className="photos_grid">
-          <img className="_img1" src={Antes} alt="" />
-          <img className="_img2" src={Depois} alt="" />
-          <img className="_img3" src={Antes} alt="" />
-          <img className="_img4" src={Depois} alt="" />
-          <img className="_img5" src={Durante} alt="" />
+          <img className="_img1" src={props.img1} alt="" />
+          <img className="_img2" src={props.img2} alt="" />
+          <img className="_img3" src={props.img3} alt="" />
+          <img className="_img4" src={props.img4} alt="" />
+          <img className="_img5" src={props.img5} alt="" />
         </div>
 
         <Button texto="Entre em contato" />

@@ -11,6 +11,10 @@ import Laundry from "../assets/icons/services_laundry.svg";
 import Porch from "../assets/icons/services_porch.svg";
 
 import KithchenImg from "../assets/imgs/ServicesImg.jpg";
+import BathImg from "../assets/imgs/ServicesImgBanheiro.jpg";
+import laundryImg from "../assets/imgs/ServicesImgLaundry.jpg";
+import BarbecueImg from "../assets/imgs/ServicesImgChurras.jpg";
+import PorchImg from "../assets/imgs/ServicesImgPorch.jpg";
 import Transition from "../Components/Transitions/Transitions";
 
 const Sobre = () => {
@@ -59,25 +63,25 @@ const Sobre = () => {
           text="Transformamos sua cozinha em um espaço funcional e moderno. Instalamos pias, torneiras e realizamos pinturas para dar vida nova ao ambiente, tornando-o perfeito para suas necessidades diárias."
         />
         <ServicesCardImg
-          img={KithchenImg}
+          img={BathImg}
           icon={Bath}
           title="Banheiros & Lavabos"
           text="Renove seu banheiro com praticidade. Instalamos acessórios, realizamos pinturas e pequenas reformas para garantir um ambiente elegante e funcional."
         />
         <ServicesCardImg
-          img={KithchenImg}
+          img={laundryImg}
           icon={Laundry}
           title="Lavanderia & Serviços"
           text="Deixe sua lavanderia mais eficiente e organizada. Realizamos instalação de tanques, prateleiras e serviços de pintura para criar um espaço prático e agradável."
         />
         <ServicesCardImg
-          img={KithchenImg}
+          img={BarbecueImg}
           icon={Barbecue}
           title="Área Gourmet & Churrasqueiras"
           text="Transforme sua área de lazer em um local perfeito para reunir amigos e familiares. Instalamos churrasqueiras, bancadas e realizamos pinturas para criar um ambiente convidativo e acolhedor."
         />
         <ServicesCardImg
-          img={KithchenImg}
+          img={PorchImg}
           icon={Porch}
           title="Varandas"
           text="Amplie seus momentos de relaxamento e convívio ao ar livre. Realizamos pequenas reformas, instalação de pisos e serviços de pintura para transformar sua varanda em um espaço aconchegante e funcional."

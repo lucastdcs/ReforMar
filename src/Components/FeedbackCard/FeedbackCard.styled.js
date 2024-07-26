@@ -4,7 +4,7 @@ const StyledContainer = styled.div`
     width: 40rem;
     padding: 3rem;
     margin-bottom: 2rem;
-    height: auto;
+    height: 30rem;
     border: 1px solid black;
     border-radius: 3rem;
     background-color: var(--off-white);
@@ -19,6 +19,8 @@ const StyledContainer = styled.div`
         grid-row: 1 / span 2;
         align-self: center;
         margin-right: 1rem;
+
+        border-radius: 50%;
     }
 
     .fb_name{

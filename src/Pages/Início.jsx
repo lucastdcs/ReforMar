@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Card from "../Components/Card/Card.jsx";
 import backgroundImg from "../assets/imgs/Hero-Img.png";
 import CardExample from "../assets/imgs/CardExample.png";
+import CardExample2 from "../assets/imgs/CardExample2.jpg";
 import Titles from "../Components/Titles/Titles.jsx";
 import ServicesCard from "../Components/ServicesCard/ServicesCard.jsx";
 import { H2 } from "../assets/styles/typography.styled.js";
@@ -170,44 +171,13 @@ const Inicio = () => {
             destino="portfolio"
           />
           <Card
-            img={CardExample}
-            title="Cuba de Cozinha"
+            img={CardExample2}
+            title="Banheiro em Mármore e Ripado"
             area="30m²"
             type="Residência"
             location="Santos - SP"
             description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
             destino="portfolio"
-
-          />
-          <Card
-            img={CardExample}
-            title="Cuba de Cozinha"
-            area="30m²"
-            type="Residência"
-            location="Santos - SP"
-            description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
-            destino="portfolio"
-
-          />
-          <Card
-            img={CardExample}
-            title="Cuba de Cozinha"
-            area="30m²"
-            type="Residência"
-            location="Santos - SP"
-            description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
-            destino="portfolio"
-
-          />
-          <Card
-            img={CardExample}
-            title="Cuba de Cozinha"
-            area="30m²"
-            type="Residência"
-            location="Santos - SP"
-            description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
-            destino="portfolio"
-
           />
         </CarouselNew>
       </StyledContainer3>

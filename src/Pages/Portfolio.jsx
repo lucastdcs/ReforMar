@@ -6,6 +6,7 @@ import NumbersSection from "../Components/NumbersSection/NumbersSection";
 import Titles from "../Components/Titles/Titles";
 import { Text } from "../assets/styles/typography.styled";
 import CardExample from "../assets/imgs/CardExample.png";
+import CardExample2 from "../assets/imgs/CardExample2.jpg";
 import ProjectsOverlay from "../Components/ProjectsOverlay/ProjectsOverlay.jsx";
 import Transition from "../Components/Transitions/Transitions.jsx";
 import Card from "../Components/Card/Card.jsx";
@@ -13,8 +14,15 @@ import img1 from "../assets/imgs/ServicesImg.jpg";
 import img2 from "../assets/imgs/ObrasIMG2.jpg";
 import img3 from "../assets/imgs/ObrasIMG3.jpg";
 import CarouselNew from "../Components/MotionCarousel/MotionCarousel.jsx";
+import { useState } from "react";
 
 const Portfolio = () => {
+
+  const [showOverlay, setShowOverlay] = useState(false);
+
+  const handleToggleOverlay = () => {
+    setShowOverlay(!showOverlay);
+  };
   const Main = styled.main`
     width: 100vw;
     color: var(--black);
@@ -133,7 +141,7 @@ const Portfolio = () => {
             magni. Voluptate voluptatem consequuntur pariatur.
           </Text>
         </div>
-        <CarouselNew>
+        <CarouselNew disableDrag={showOverlay}>
           <Card
             className="project_card"
             img={CardExample}
@@ -149,8 +157,8 @@ const Portfolio = () => {
           />
           <Card
             className="project_card"
-            img={CardExample}
-            title="Cuba de Cozinha"
+            img={CardExample2}
+            title="Banheiro em mármore e ripado"
             feedbackStars="4"
             duration="1 Semana"
             year="2023"
