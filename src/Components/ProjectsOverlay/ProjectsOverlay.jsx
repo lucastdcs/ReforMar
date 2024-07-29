@@ -40,7 +40,7 @@ const ProjectsOverlay = (props) => {
           <div className="detail_wrapper">
             <LabelTitle>Feedback do cliente:</LabelTitle>
             <H4>
-              {props.feedbackStars}/5 <Stars />
+              {props.feedbackStars}/5 <Stars rating={props.rating}/>
             </H4>
           </div>
           <div className="detail_wrapper">

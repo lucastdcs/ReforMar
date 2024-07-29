@@ -142,6 +142,7 @@ const Portfolio = () => {
             img={`/src/assets/imgs/projeto1/thumbnail.jpg`}
             title="Cuba de Cozinha"
             feedbackStars="4"
+            rating={4}
             duration="1 Semana"
             year="2023"
             area="30m²"
@@ -152,12 +153,14 @@ const Portfolio = () => {
             images={imageUrls1}
             antes={`/src/assets/imgs/projeto1/antes.jpg`}
             depois={`/src/assets/imgs/projeto1/depois.jpg`}
+            
           />
           <Card
             className="project_card"
             img={`/src/assets/imgs/projeto2/thumbnail.jpg`}
             title="Banheiro em mármore e ripado"
             feedbackStars="4"
+            rating={4}
             duration="1 Semana"
             year="2023"
             area="30m²"

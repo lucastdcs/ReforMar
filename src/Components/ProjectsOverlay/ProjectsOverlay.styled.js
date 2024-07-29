@@ -26,9 +26,19 @@ export const Overlay = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+
 
 
     color: var(--off-white);
+
+    @media (max-width:800px){
+            padding: 4rem 1rem;
+
+            #back {
+                margin-right: 3rem;
+            }
+    }
 
     .all_details_wrapper {
         max-width: 77rem;
@@ -39,7 +49,7 @@ export const Overlay = styled.section`
         margin: 6rem auto;
 
         .detail_wrapper {
-            text-align: left;
+            text-align: center;
         }
     }
 
@@ -57,8 +67,8 @@ export const Overlay = styled.section`
       text-align: left;
       border: 1px solid var(--off-white);
       margin: auto;
-        width: 95%;
-        height: auto;
+      width: 95%;
+      height: auto;
       border-radius: 4rem;
       margin-bottom: 5rem;
     }
@@ -69,6 +79,7 @@ export const Overlay = styled.section`
         width: fit-content;
         align-self: end;
         margin-bottom: 6rem;
+        margin-right: 3rem;
         cursor: pointer;
         
         h3 {
@@ -80,12 +91,21 @@ export const Overlay = styled.section`
     .preview {
         margin: 8rem 0;
         max-width: 132rem;
-
+        min-width: 90%;
         img {
             min-width: 100rem;
             width: 100%;
             pointer-events: none;
             border-radius: 2rem;
+
+        }
+        @media (max-width:800px){
+            width: 100%;
+            img {
+                width: 60vw;
+                min-width: 0;
+            }
+
         }
     }
 
@@ -94,12 +114,14 @@ export const Overlay = styled.section`
         max-width: 132rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto ;
+        grid-template-rows: 80rem 80rem 40rem 30rem auto  ;
         grid-gap: 2rem;
 
         img {
             width: 100%;
+            height: 100%;
             border-radius: 2rem;
+            object-fit: cover;
         }
 
         ._img1{

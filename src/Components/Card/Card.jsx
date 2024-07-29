@@ -52,7 +52,7 @@ const Card = (props) => {
           />
         </div>
       </StyledCard>
-      {showOverlay && <ProjectsOverlay {...props} onClick={toggleOverlay} images={props.images}/>}
+      {showOverlay && <ProjectsOverlay {...props} onClick={toggleOverlay} images={props.images} rating={props.rating}/>}
     </div>
   );
 };
