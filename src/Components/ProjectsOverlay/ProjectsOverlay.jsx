@@ -1,20 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { StyledContainer, Overlay } from "./ProjectsOverlay.styled";
 import Titles from "../../Components/Titles/Titles";
 import Stars from "../Stars/Stars.jsx";
 import Card from "../Card/Card.jsx";
-import { H5 } from "../../assets/styles/typography.styled.js";
 import Button from "../Button/Button.jsx";
 import { LabelTitle, H4, Text } from "../../assets/styles/typography.styled.js";
 import CardExample from "../../assets/imgs/CardExample.png";
 import CarouselNew from "../MotionCarousel/MotionCarousel.jsx";
-
-import Antes from "../../assets/imgs/PortfolioP1Antes.jpg";
-import Depois from "../../assets/imgs/PortfolioP1Depois.jpg";
-import Durante from "../../assets/imgs/PortfolioP1Durante.jpg";
+import ReactDOM from 'react-dom';
 
 const ProjectsOverlay = (props) => {
-  return (
+  return ReactDOM.createPortal(
     <StyledContainer>
       <Overlay>
         <button id="back" onClick={props.onClick}>
@@ -68,11 +64,9 @@ const ProjectsOverlay = (props) => {
         <Titles text_label="" text_title="Mais fotos" text_span="" />
 
         <div className="photos_grid">
-          <img className="_img1" src={props.img1} alt="" />
-          <img className="_img2" src={props.img2} alt="" />
-          <img className="_img3" src={props.img3} alt="" />
-          <img className="_img4" src={props.img4} alt="" />
-          <img className="_img5" src={props.img5} alt="" />
+        {props.images && props.images.map((image, index) => (
+            <img key={index} src={image} alt={`Overlay Image ${index + 1}`} className={`_img${index + 1}`} />
+          ))}
         </div>
 
         <Button texto="Entre em contato" />
@@ -90,7 +84,8 @@ const ProjectsOverlay = (props) => {
           />
         </div>
       </Overlay>
-    </StyledContainer>
+    </StyledContainer>,
+    document.body
   );
 };
 
