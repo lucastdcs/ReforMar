@@ -9,7 +9,7 @@ export const StyledContainer = styled.section`
     width: 100vw;
     color: var(--black);
     text-align: center;
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
     .project_title {
     text-align: start;
     margin-left: 10%;

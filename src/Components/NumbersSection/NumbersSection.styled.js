@@ -7,5 +7,5 @@ text-align: center;
 h2 {
   margin-top: 8rem;
 }
-margin-bottom: 13rem;
+/* margin-bottom: 13rem; */
 `;

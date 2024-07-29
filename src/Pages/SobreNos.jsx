@@ -13,6 +13,13 @@ const SobreNos = () => {
     width: 100vw;
     margin-top: 20rem;
     color: var(--black);
+
+    :nth-child(3) {
+      margin-top: 5rem;
+      h2 {
+        margin-bottom: 0;
+      }
+    }
   `;
 
   const StyledSection = styled.section`
