@@ -16,8 +16,8 @@ const ServicesCardImg = (props) => {
         <H4 className="title">{props.title}</H4>
         <Text className="description">{props.text}</Text>
 
-        <Button className="btn" texto="Entre em contato" variant="outline" />
-        <Button className="btn2" texto="Veja nosso portfólio" />
+        <Button className="btn" texto="Entre em contato" variantType="outline" destino="contato" />
+        <Button className="btn2" texto="Veja nosso portfólio" destino="portfolio"/>
       </StyledServicesCard>
     </>
   );
