@@ -20,6 +20,10 @@ const Portfolio = () => {
     text-align: center;
     margin-top: 22rem;
     height: fit-content;
+
+    :nth-child(7) {
+      margin-top: 5rem;
+    }
   `;
   const Grid = styled.div`
     position: relative;
