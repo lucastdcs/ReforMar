@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Card from "../Components/Card/Card.jsx";
 import backgroundImg from "../assets/imgs/Hero-Img.png";
-import CardExample from "../assets/imgs/CardExample.png";
-import CardExample2 from "../assets/imgs/CardExample2.jpg";
 import Titles from "../Components/Titles/Titles.jsx";
 import ServicesCard from "../Components/ServicesCard/ServicesCard.jsx";
 import { H2 } from "../assets/styles/typography.styled.js";
@@ -161,9 +159,13 @@ const Inicio = () => {
           text_span="Exclusivos"
         />
         <CarouselNew>
-          <Card
-            img={CardExample}
+        <Card
+            className="project_card"
+            img={`/src/assets/imgs/projeto1/thumbnail.jpg`}
             title="Cuba de Cozinha"
+            feedbackStars="4"
+            duration="1 Semana"
+            year="2023"
             area="30m²"
             type="Residência"
             location="Santos - SP"
@@ -171,8 +173,12 @@ const Inicio = () => {
             destino="portfolio"
           />
           <Card
-            img={CardExample2}
-            title="Banheiro em Mármore e Ripado"
+            className="project_card"
+            img={`/src/assets/imgs/projeto2/thumbnail.jpg`}
+            title="Banheiro em mármore e ripado"
+            feedbackStars="4"
+            duration="1 Semana"
+            year="2023"
             area="30m²"
             type="Residência"
             location="Santos - SP"

@@ -10,6 +10,9 @@ import CarouselNew from "../MotionCarousel/MotionCarousel.jsx";
 import ReactDOM from 'react-dom';
 
 const ProjectsOverlay = (props) => {
+  if (typeof document === 'undefined') {
+    return null;
+  }
   return ReactDOM.createPortal(
     <StyledContainer>
       <Overlay>
