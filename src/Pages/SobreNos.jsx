@@ -14,10 +14,10 @@ const SobreNos = () => {
     margin-top: 20rem;
     color: var(--black);
 
-    :nth-child(3) {
+    section:nth-child(3) {
       margin-top: 5rem;
       h2 {
-        margin-bottom: 0;
+        margin-bottom: 5rem;
       }
     }
   `;
