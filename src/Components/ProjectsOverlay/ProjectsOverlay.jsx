@@ -72,7 +72,7 @@ const ProjectsOverlay = (props) => {
           ))}
         </div>
 
-        <Button texto="Entre em contato" />
+        <Button texto="Entre em contato" destino="contato"/>
 
         <div className="more">
           <H4>Veja mais projetos</H4>

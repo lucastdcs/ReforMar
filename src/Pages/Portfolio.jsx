@@ -134,10 +134,9 @@ const Portfolio = () => {
             text_span=""
           />
           <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem doloribus provident autem ducimus maxime eligendi
-            recusandae iure corrupti molestiae expedita amet vel, nihil cum a
-            magni. Voluptate voluptatem consequuntur pariatur.
+            Cada projeto é uma colaboração única entre nossa equipe e nossos
+            clientes, resultando em espaços que refletem suas personalidades e
+            atendem às suas necessidades diárias.
           </Text>
         </div>
         <CarouselNew>
@@ -157,7 +156,6 @@ const Portfolio = () => {
             images={imageUrls1}
             antes={`/src/assets/imgs/projeto1/antes.jpg`}
             depois={`/src/assets/imgs/projeto1/depois.jpg`}
-            
           />
           <Card
             className="project_card"

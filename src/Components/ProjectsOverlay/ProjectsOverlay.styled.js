@@ -92,6 +92,7 @@ export const Overlay = styled.section`
         margin: 8rem 0;
         max-width: 132rem;
         min-width: 90%;
+        
         img {
             min-width: 100rem;
             width: 100%;
@@ -114,14 +115,15 @@ export const Overlay = styled.section`
         max-width: 132rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 80rem 80rem 40rem 30rem auto  ;
+        grid-template-rows: auto ;
         grid-gap: 2rem;
 
+        
         img {
             width: 100%;
             height: 100%;
             border-radius: 2rem;
-            object-fit: cover;
+            object-fit: contain;
         }
 
         ._img1{
@@ -148,7 +150,38 @@ export const Overlay = styled.section`
             grid-column: 1 / span 2 ;
             grid-row: 4;
         }
+        @media (max-width:600px){
 
+            grid-template-rows: auto ;
+            img {
+                object-fit: contain;
+            }
+            
+            ._img1{
+                grid-column: 1 / span 2;
+                grid-row: 1;
+            }
+
+            ._img2{
+                grid-column: 1 / span 2;
+                grid-row: 2;
+            }
+
+            ._img3{
+                grid-column: 1 / span 2;
+                grid-row: 3;
+            }
+
+            ._img4{
+                grid-column: 1 / span 2;
+                grid-row: 4;
+            }
+
+            ._img5{
+                grid-column: 1 / span 2 ;
+                grid-row: 5;
+            }
+        }
     }
     .more {
         h3 {
