@@ -1,23 +1,83 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+
 import {
   StyledForm,
   StyledInput,
   StyledArchive,
   StyledTextArea,
 } from "./Form.styled";
-
 import Button from "../Button/Button";
 
 const Form = () => {
+  const contactForm = useRef();
+  const [formData, setFormData] = useState({
+    user_name: "",
+    user_email: "",
+    message: "",
+    files: null,
+  });
+
+  const handleChange = (e) => {
+    const { name, value, files } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: files ? files[0] : value,
+    }));
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_4wzmv46', 'template_el4yyi9', contactForm.current, {
+        publicKey: 'kpxzOM0J67_H5q5Fn',
+    }).then(
+        () => {
+            console.log('SUCCESS');
+            // Limpar o formulário após o envio bem-sucedido
+            setFormData({
+              user_name: "",
+              user_email: "",
+              message: "",
+              files: null,
+            });
+        },
+        (error) => {
+            console.log("FAILED", error.text);
+        },
+    );
+  };
+
   return (
     <>
-      <StyledForm>
-        <StyledInput placeholder="Seu Nome" />
-        <StyledInput placeholder="Seu E-mail" />
-        <StyledTextArea placeholder="Qual a sua mensagem?" />
+      <StyledForm ref={contactForm} onSubmit={sendEmail}>
+        <StyledInput
+          placeholder="Seu Nome"
+          type="text"
+          name="user_name"
+          value={formData.user_name}
+          onChange={handleChange}
+        />
+        <StyledInput
+          placeholder="Seu E-mail"
+          type="email"
+          name="user_email"
+          value={formData.user_email}
+          onChange={handleChange}
+        />
+        <StyledTextArea
+          placeholder="Qual a sua mensagem?"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+        />
         <StyledArchive>
-          <StyledInput placeholder="Anexar arquivo" type="file" />
-
+          <StyledInput
+            placeholder="Anexar arquivo"
+            type="file"
+            name="files"
+            onChange={handleChange}
+          />
           <svg
             width="24"
             height="24"
@@ -34,7 +94,7 @@ const Form = () => {
             />
           </svg>
         </StyledArchive>
-        <Button type="submit" texto="Enviar" />
+        <Button type="submit" texto="Enviar" value="send"/>
       </StyledForm>
     </>
   );
