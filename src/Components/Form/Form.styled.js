@@ -14,6 +14,10 @@ export const StyledForm = styled.form`
     button {
         width: 100%;
     }
+
+    p {
+        color: red
+    }
 `;
 
 export const StyledInput = styled.input`
