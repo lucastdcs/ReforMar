@@ -9,23 +9,45 @@ import { Text, H3 } from "../../assets/styles/typography.styled";
 import Button from "../Button/Button";
 import Form from "../Form/Form";
 
-const ContactUs = () => {
+const ContactUs = (props) => {
+  const isPage = props.isPage;
+
   return (
     <StyledSection>
       <div className="form_wrapper">
         <div className="title_wrapper">
-          <Titles
-            text_label="contate-nos"
-            text_title="Preparado para transformar sua casa no"
-            text_span="seu lar?"
-          />
-          <Text>
-            Escreva ao lado uma mensagem <br /> para nós e entraremos em
-            contato!
-          </Text>
-          <Button texto="Veja outros contatos" variantType="outline" />
+          {isPage ? (
+            <>
+              <Titles
+                text_label="contate-nos"
+                text_title="Escreva sua mensagem ao lado"
+                text_span=""
+              />
+              <Text>
+                <strong>Ou contate-nos</strong> <br />
+                <strong>Email:</strong> <br />
+                atendimento@reformarobrasexpress.com <br />
+                <strong>Telefones:</strong> <br />
+                (11) 93961-2000 <br />
+                (13) 98220-2000
+              </Text>
+            </>
+          ) : (
+            <>
+              <Titles
+                text_label="contate-nos"
+                text_title="Preparado para transformar sua casa no"
+                text_span="seu lar?"
+              />
+              <Text>
+                Escreva ao lado uma mensagem <br /> para nós e entraremos em
+                contato!
+              </Text>
+              <Button texto="Veja outros contatos" variantType="outline" />
+            </>
+          )}
         </div>
-        <Form/>
+        <Form />
       </div>
       <StyledLocations className="locations_wrapper">
         <Titles

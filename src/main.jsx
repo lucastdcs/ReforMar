@@ -58,12 +58,10 @@ const Layout = () => {
     <>
       <Header {...getHeaderProps()} />
       <AnimatePresence mode="wait">
-    
-          <Outlet />
-        
+        <Outlet />
       </AnimatePresence>
 
-      <ContactUs />
+      {location.pathname === "/contato" ? <ContactUs isPage /> : <ContactUs />}
       <Footer />
     </>
   );
