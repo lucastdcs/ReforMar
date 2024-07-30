@@ -112,6 +112,7 @@ const Portfolio = () => {
 
   const imageUrls1 = getImagesFromFolder("projeto1");
   const imageUrls2 = getImagesFromFolder("projeto2");
+  
 
   return (
     <Main>

@@ -30,13 +30,19 @@ const Footer = () => {
               <Text>Empresa</Text>
             </li>
             <li>
-              <Text>Sobre Nós</Text>
+              <a href="/sobreNos">
+                <Text>Sobre Nós</Text>
+              </a>
             </li>
             <li>
-              <Text>Serviços</Text>
+              <a href="/servicos">
+                <Text>Serviços</Text>
+              </a>
             </li>
             <li>
-              <Text>Contatos</Text>
+              <a href="/contato">
+                <Text>Contatos</Text>
+              </a>
             </li>
           </ul>
           <ul>

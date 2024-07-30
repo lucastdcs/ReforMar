@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {motion} from "framer-motion"
 
 export const H1 = styled.h1`
     font-family: var(--font-family-grifter);
@@ -153,7 +154,7 @@ export const Text = styled.p`
 
 `;
 
-export const Label = styled.a`
+export const Label = styled(motion.a)`
     font-family: var(--font-family-grifter);
     font-size: var(--font-size-label10);
     line-height: var(--spacing-160);

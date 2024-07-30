@@ -1,5 +1,5 @@
-import React, { useState} from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import LogoPequeno from "../../assets/icons/LogotipoSmall.svg";
 import StyledHeader from "./Header.styled.js";
 import { StyledNav } from "./Header.styled.js";
@@ -18,14 +18,13 @@ const Header = (props) => {
   const closeMenu = () => {
     setMenuActive(false);
   };
-  
 
   return (
     <StyledHeader text_color={props.text_color}>
       <div className="wrapper">
         <a href="/">
           <img src={props.logo} alt="Logotipo" id="logo" />
-        <img src={LogoPequeno} alt="Logotipo" id="logo_pequeno" />
+          <img src={LogoPequeno} alt="Logotipo" id="logo_pequeno" />
         </a>
         <span>
           <a href="https://www.instagram.com/reformarobras/">
@@ -42,22 +41,38 @@ const Header = (props) => {
       <div className="wrapper2">
         <StyledNav className={menuActive ? "active" : ""}>
           <div className="back-arrow" onClick={closeMenu}></div>
-          <ul  id={menuActive ? "" : "active"}>
-            <li>
+          <ul id={menuActive ? "" : "active"}>
+            <motion.li
+              whileHover={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              whileTap={{ scale: 1 }}
+            >
               <Label href="/sobreNos">Sobre Nós</Label>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              whileHover={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              whileTap={{ scale: 1 }}
+            >
               <Label href="/servicos">Serviços</Label>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              whileHover={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              whileTap={{ scale: 1 }}
+            >
               <Label href="/portfolio">Portfólio</Label>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              whileHover={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              whileTap={{ scale: 1 }}
+            >
               <Label href="/contato">Contatos</Label>
-            </li>
+            </motion.li>
           </ul>
         </StyledNav>
-        <Button texto="Entre em contato" destino="contato"/>
+        <Button texto="Entre em contato" destino="contato" />
         <StyledNavButton id="nav_menu" onClick={toggleMenu}>
           <img src={props.menuIcon} alt="" />
         </StyledNavButton>

@@ -20,8 +20,9 @@ const Button = (props) => {
 
   return (
     <StyledButton
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 1.15 }}
+      whileHover={{ scale: 0.95 }}
+      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+      whileTap={{ scale: 1 }}
       id="btn_contact"
       className={props.className}
       variantType={props.variantType}

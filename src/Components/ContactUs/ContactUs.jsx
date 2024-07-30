@@ -43,7 +43,7 @@ const ContactUs = (props) => {
                 Escreva ao lado uma mensagem <br /> para nós e entraremos em
                 contato!
               </Text>
-              <Button texto="Veja outros contatos" variantType="outline" />
+              <Button texto="Veja outros contatos" variantType="outline" destino="contato"/>
             </>
           )}
         </div>

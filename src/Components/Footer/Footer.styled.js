@@ -4,6 +4,11 @@ export const StyledContainer = styled.footer`
     width: 100vw;
     background-color: var(--black);
     padding-bottom: 6rem;
+
+   ul li a {
+        text-decoration: none;
+        color: inherit;
+    }
     
     .wrapper {
         margin: auto;
