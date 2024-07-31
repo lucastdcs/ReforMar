@@ -112,6 +112,16 @@ const Portfolio = () => {
 
   const imageUrls1 = getImagesFromFolder("projeto1");
   const imageUrls2 = getImagesFromFolder("projeto2");
+
+  const thumbnailUrl1 = new URL(
+    "/src/assets/imgs/projeto1/thumbnail.jpg",
+    import.meta.url
+  ).href;
+  const thumbnailUrl2 = new URL(
+    "/src/assets/imgs/projeto2/thumbnail.jpg",
+    import.meta.url
+  ).href;
+
   
 
   return (
@@ -143,7 +153,7 @@ const Portfolio = () => {
         <CarouselNew>
           <Card
             className="project_card"
-            img={`/src/assets/imgs/projeto1/thumbnail.jpg`}
+            img={thumbnailUrl1}
             title="Cuba de Cozinha"
             feedbackStars="4"
             rating={4}
@@ -160,7 +170,7 @@ const Portfolio = () => {
           />
           <Card
             className="project_card"
-            img={`/src/assets/imgs/projeto2/thumbnail.jpg`}
+            img={thumbnailUrl2}
             title="Banheiro em mármore e ripado"
             feedbackStars="4"
             rating={4}
