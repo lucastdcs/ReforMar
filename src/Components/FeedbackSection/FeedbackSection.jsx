@@ -20,7 +20,7 @@ const FeedbackSection = () => {
         text_span="clientes satisfeitos!"
       />
 
-      <CarouselNew>
+      <CarouselNew className="fb_carousel_inner">
         <FeedbackCard rating={4} photo={Photo} name="Paso Import" type="empresa" date="JUN/2024" text="Empresa profissional e rápida. A equipe do Rodrigo é prestativa. Serviço
         excelente. Valeu o preço. Fiquei surpreendido e recomendo!"/>
         <FeedbackCard rating={5} photo={Eder} name="Eder Espacini" type="técnico" date="JUN/2024" text="Foi um ótimo atendimento, rápido, preciso e de qualidade. a equipe de Rodrigo foi excelente!"/>

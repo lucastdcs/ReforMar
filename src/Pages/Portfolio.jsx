@@ -108,6 +108,12 @@ const Portfolio = () => {
         margin: 0;
       }
     }
+
+    @media (max-width: 1000px) {
+      .portfolio_carousel_inner {
+        width: 90vw;
+      }
+    }
   `;
 
   const imageUrls1 = getImagesFromFolder("projeto1");
@@ -121,8 +127,6 @@ const Portfolio = () => {
     "/src/assets/imgs/projeto2/thumbnail.jpg",
     import.meta.url
   ).href;
-
-  
 
   return (
     <Main>
@@ -150,7 +154,7 @@ const Portfolio = () => {
             atendem às suas necessidades diárias.
           </Text>
         </div>
-        <CarouselNew>
+        <CarouselNew className="portfolio_carousel_inner">
           <Card
             className="project_card"
             img={thumbnailUrl1}

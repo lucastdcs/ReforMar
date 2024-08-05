@@ -9,7 +9,7 @@ export const StyledContainer = styled.section`
     width: 100vw;
     color: var(--black);
     text-align: center;
-    /* margin-top: 10rem; */
+
     .project_title {
     text-align: start;
     margin-left: 10%;
@@ -23,4 +23,10 @@ export const StyledContainer = styled.section`
     margin-top: 6rem;
     margin-bottom: 6rem;
     }
+    @media (max-width:1000px){
+
+    .fb_carousel_inner{
+    width: 90vw;
+    }
+}
 `;

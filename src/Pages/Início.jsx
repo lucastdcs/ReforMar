@@ -95,6 +95,13 @@ const Inicio = () => {
       text-align: start;
       margin-left: 10%;
     }
+
+    @media (max-width:1000px){
+
+      .inicio_carousel_inner{
+        width: 90vw;
+      }
+    }
   `;
   const StyledContainer4 = styled.section`
     width: 100vw;
@@ -165,7 +172,7 @@ const Inicio = () => {
           text_title="Projetos"
           text_span="Exclusivos"
         />
-        <CarouselNew>
+        <CarouselNew className="inicio_carousel_inner">
           <Card
             className="project_card"
             img={thumbnailUrl1}

@@ -4,14 +4,16 @@ import { motion } from "framer-motion";
 export const StyledCarouselNew = styled(motion.div)`
     cursor: drag;
     overflow: hidden;
-    margin: auto;
-    width: 100%;
+  width: 100%; /* Ajuste a largura conforme necessário */
+  margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+  display: flex;
+  justify-content: center; /* Centraliza os itens dentro do carrossel */
 
 `;
 
 export const Inner = styled(motion.div)`
     display: flex;
-    width: 100%;
+    width: 80%;
 
 `;
 

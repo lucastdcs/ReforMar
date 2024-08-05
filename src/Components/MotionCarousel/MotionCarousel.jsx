@@ -1,7 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import { StyledCarouselNew, Inner, Item } from "./MotionCarousel.styled";
+import { filterProps } from "framer-motion";
 
-const CarouselNew = ({ children }) => {
+const CarouselNew = ({ children, className }) => {
   const carousel = useRef();
   const [width, setWidth] = useState(0);
 
@@ -22,7 +23,7 @@ const CarouselNew = ({ children }) => {
   return (
     <>
       <StyledCarouselNew ref={carousel} whileTap={{ cursor: "grabbing" }}>
-        <Inner drag="x" dragConstraints={{ right: 0, left: -width }}>
+        <Inner className={className} drag="x" dragConstraints={{ right: 0, left: -width }}>
           {React.Children.map(children, (child, index) => (
             <Item key={index}>{child}</Item>
           ))}
