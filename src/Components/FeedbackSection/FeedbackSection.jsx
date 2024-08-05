@@ -21,11 +21,11 @@ const FeedbackSection = () => {
       />
 
       <CarouselNew>
-        <FeedbackCard photo={Photo} name="Paso Import" type="empresa" date="JUN/2024" text="Empresa profissional e rápida. A equipe do Rodrigo é prestativa. Serviço
+        <FeedbackCard rating={4} photo={Photo} name="Paso Import" type="empresa" date="JUN/2024" text="Empresa profissional e rápida. A equipe do Rodrigo é prestativa. Serviço
         excelente. Valeu o preço. Fiquei surpreendido e recomendo!"/>
-        <FeedbackCard photo={Eder} name="Eder Espacini" type="técnico" date="JUN/2024" text="Foi um ótimo atendimento, rápido, preciso e de qualidade. a equipe de Rodrigo foi excelente!"/>
-        <FeedbackCard photo={Luciana} name="Luciana Rocha" type="-" date="MAR/2024" text="Ótima empresa! Profissionalismo nota 10. Equipe do Rodrigo Vitor me deram todo suporte antes, durante e depois."/>
-        <FeedbackCard photo={Vanessa} name="Vanessa Oliveira" type="-" date="JUN/2024" text="Foram rápidos para atender a minha demanda, e trabalho feito com excelência."/>
+        <FeedbackCard rating={5} photo={Eder} name="Eder Espacini" type="técnico" date="JUN/2024" text="Foi um ótimo atendimento, rápido, preciso e de qualidade. a equipe de Rodrigo foi excelente!"/>
+        <FeedbackCard rating={4} photo={Luciana} name="Luciana Rocha" type="-" date="MAR/2024" text="Ótima empresa! Profissionalismo nota 10. Equipe do Rodrigo Vitor me deram todo suporte antes, durante e depois."/>
+        <FeedbackCard rating={5} photo={Vanessa} name="Vanessa Oliveira" type="-" date="JUN/2024" text="Foram rápidos para atender a minha demanda, e trabalho feito com excelência."/>
 
       </CarouselNew>
 
