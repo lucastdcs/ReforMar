@@ -15,7 +15,6 @@ import BathImg from "../assets/imgs/ServicesImgBanheiro.jpg";
 import laundryImg from "../assets/imgs/ServicesImgLaundry.jpg";
 import BarbecueImg from "../assets/imgs/ServicesImgChurras.jpg";
 import PorchImg from "../assets/imgs/ServicesImgPorch.jpg";
-import Transition from "../Components/Transitions/Transitions";
 
 const Sobre = () => {
   const StyledMain = styled.main`
@@ -92,4 +91,4 @@ const Sobre = () => {
   );
 };
 
-export default Transition(Sobre);
+export default Sobre;

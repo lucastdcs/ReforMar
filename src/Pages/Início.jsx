@@ -9,7 +9,7 @@ import { Text } from "../assets/styles/typography.styled.js";
 import { LabelTitle } from "../assets/styles/typography.styled.js";
 import Button from "../Components/Button/Button.jsx";
 import Badges from "../Components/Badges/Badges.jsx";
-import Carousel from "../Components/Carrousel/Carousel.jsx";
+
 
 import CarouselNew from "../Components/MotionCarousel/MotionCarousel.jsx";
 import Kitchen from "../assets/icons/services_kitchen.svg";
@@ -21,7 +21,7 @@ import Porch from "../assets/icons/services_porch.svg";
 import FeedbackSection from "../Components/FeedbackSection/FeedbackSection.jsx";
 import ValuesSection from "../Components/ValuesSection/ValuesSection.jsx";
 import NumbersSection from "../Components/NumbersSection/NumbersSection.jsx";
-import Transition from "../Components/Transitions/Transitions.jsx";
+
 
 const Inicio = () => {
   const StyledContainer = styled.section`
@@ -244,4 +244,4 @@ const Inicio = () => {
   );
 };
 
-export default Transition(Inicio);
+export default Inicio;

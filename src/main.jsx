@@ -6,7 +6,7 @@ import {
   useLocation,
   Outlet,
 } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+
 import "./index.css";
 import Header from "./Components/Header/Header.jsx";
 import ContactUs from "./Components/ContactUs/ContactUs.jsx";
@@ -57,10 +57,7 @@ const Layout = () => {
   return (
     <>
       <Header {...getHeaderProps()} />
-      <AnimatePresence mode="wait">
         <Outlet />
-      </AnimatePresence>
-
       {location.pathname === "/contato" ? <ContactUs isPage /> : <ContactUs />}
       <Footer />
     </>

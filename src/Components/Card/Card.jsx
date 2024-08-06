@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import styled from "styled-components";
-import ProjectsOverlay from "../ProjectsOverlay/ProjectsOverlay";
+import React, { useState, useEffect, lazy, Suspense } from "react";
+
+const LazyOverlay = lazy(() => import("../ProjectsOverlay/ProjectsOverlay"));
+
 import { StyledCard } from "./Card.styled";
 import Button from "../Button/Button";
 import { H5 } from "../../assets/styles/typography.styled";
 import { Text } from "../../assets/styles/typography.styled";
 
 const Card = (props) => {
-  const navigate = useNavigate();
 
   const [showOverlay, setShowOverlay] = useState(false);
   const toggleOverlay = () => {
@@ -52,7 +51,7 @@ const Card = (props) => {
           />
         </div>
       </StyledCard>
-      {showOverlay && <ProjectsOverlay {...props} onClick={toggleOverlay} images={props.images} rating={props.rating}/>}
+      {showOverlay && <Suspense><LazyOverlay {...props} onClick={toggleOverlay} images={props.images} rating={props.rating}/></Suspense>}
     </div>
   );
 };

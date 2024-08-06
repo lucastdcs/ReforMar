@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components"
-import Transition from "../Components/Transitions/Transitions";
 
 const Contact = () => {
     const Blank = styled.div`
@@ -13,4 +12,4 @@ const Contact = () => {
     );
 };
 
-export default Transition(Contact);
+export default Contact;
