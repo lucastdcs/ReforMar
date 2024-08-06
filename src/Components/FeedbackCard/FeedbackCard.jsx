@@ -2,6 +2,7 @@ import React from "react";
 import StyledContainer from "./FeedbackCard.styled";
 import { H7, H6, Label, Text } from "../../assets/styles/typography.styled";
 
+
 const StarIcon = ({ filled }) => (
   <svg
     width="20" 
