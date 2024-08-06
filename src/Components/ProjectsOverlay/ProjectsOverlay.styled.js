@@ -14,7 +14,7 @@ export const StyledContainer = styled.div`
 export const Overlay = styled.section`
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 10%;
     transform: translate(-50%, 0%);
     width: 90vw;
     height: fit-content;

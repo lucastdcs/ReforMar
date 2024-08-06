@@ -10,7 +10,8 @@ const Button = (props) => {
     if (props.onClick) {
       props.onClick();
     } else if (props.destino) {
-      navigate(`/${props.destino}`);
+      navigate(`/${props.destino}`)
+      window.scrollTo(0, 0);
     }
   }
 
