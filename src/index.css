@@ -38,7 +38,7 @@ body {
   background-image: url("./assets/imgs/Grafismo.png");
   background-repeat: repeat-y;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
 }
 
 
