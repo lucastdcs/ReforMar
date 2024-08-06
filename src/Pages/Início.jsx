@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Card from "../Components/Card/Card.jsx";
-import backgroundImg from "../assets/imgs/Hero-Img.png";
+import backgroundImg from "../assets/imgs/Hero-Img.webp";
 import Titles from "../Components/Titles/Titles.jsx";
 import ServicesCard from "../Components/ServicesCard/ServicesCard.jsx";
 import { H2 } from "../assets/styles/typography.styled.js";
