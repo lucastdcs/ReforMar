@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'Grifter';
-    src: url('../../fonts/GRIFTER-BOLD.OTF') format('otf');
+    src: url('../../fonts/GRIFTERBold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
   }
   
 @font-face {
     font-family: 'Helvetica';
-    src: url('../../fonts/HELVETICA-01.TTF') format('ttf');
+    src: url('../../fonts/Helvetica.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
   }
