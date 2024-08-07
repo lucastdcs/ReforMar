@@ -20,10 +20,12 @@
   margin: 0;
   padding: 0;
 
+
 }
 
 html {
-  font-size: 52.5%; /* 1rem = 10px */
+  font-size: 52.5%;
+  /* 1rem = 10px */
   scroll-behavior: smooth;
 }
 
@@ -76,6 +78,7 @@ body {
 
   transform-origin: bottom;
 }
+
 .slide-out {
   position: fixed;
   top: 0;
@@ -84,4 +87,8 @@ body {
   height: 100vh;
   background-color: red;
   transform-origin: top;
+}
+
+.project_title {
+  margin: 0 0.5rem;
 }

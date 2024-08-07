@@ -80,6 +80,7 @@ const Inicio = () => {
     text-align: center;
     width: 100vw;
     padding: 6rem 0;
+    padding-bottom: 0;
 
     h3 {
       margin: 0 2rem;
@@ -108,7 +109,6 @@ const Inicio = () => {
     color: var(--black);
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-bottom: 10rem;
 
     .project_title {
       text-align: start;

@@ -6,6 +6,7 @@ export const StyledServicesCard = styled.div`
    height: 60rem;
    background-color: var(--black);
    border-radius: 4rem;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
    padding: 6rem 3rem 3rem 6rem;
    display: flex;
    flex-direction: column;

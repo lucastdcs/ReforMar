@@ -7,6 +7,8 @@ export const StyledServicesCard = styled.div`
 
    background-color: var(--black);
    border-radius: 4rem;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
    padding: 3rem;
 
    display: grid;

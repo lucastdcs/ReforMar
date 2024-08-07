@@ -26,7 +26,7 @@ const Portfolio = () => {
   `;
   const Grid = styled.div`
     position: relative;
-    bottom: -14rem;
+    bottom: -10rem;
     max-width: 180rem;
     max-height: 60rem;
     display: grid;
@@ -40,6 +40,8 @@ const Portfolio = () => {
       object-fit: cover;
       width: 100%;
       height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
     }
 
     .img1 {
@@ -84,13 +86,15 @@ const Portfolio = () => {
   const Projects = styled.section`
     width: 100vw;
     height: fit-content;
-    padding-top: 30rem;
+    padding-top: 25rem;
     padding-bottom: 10rem;
     background-color: var(--black);
     color: var(--off-white);
 
     p {
-      margin: 6rem 0;
+      margin-top: 6rem;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
     }
 
     .text_wrapper {
