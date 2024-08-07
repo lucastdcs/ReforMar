@@ -57,7 +57,7 @@ export const StyledCard = styled.div`
 
 
     @media (max-width:900px){
-        width: 90vw;
+        width: 81vw;
         height: 48rem;
        
         .card_wrapper {
