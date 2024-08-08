@@ -10,7 +10,8 @@ import img1 from "../assets/imgs/ServicesImg.jpg";
 import img2 from "../assets/imgs/ObrasIMG2.jpg";
 import img3 from "../assets/imgs/ObrasIMG3.jpg";
 import CarouselNew from "../Components/MotionCarousel/MotionCarousel.jsx";
-import getImagesFromFolder from "../utils/getImagesfromFolder.js";
+import {getImagesFromFolder} from "../utils/getImagesfromFolder.js";
+import {getBeforeAfterImagesFromFolder} from "../utils/getImagesfromFolder.js";
 
 const Portfolio = () => {
   const Main = styled.main`
@@ -120,12 +121,14 @@ const Portfolio = () => {
   `;
 
   const imageUrls1 = getImagesFromFolder("projeto1");
-  const imageUrls2 = getImagesFromFolder("projeto2");
-
   const thumbnailUrl1 = new URL(
     "/src/assets/imgs/projeto1/thumbnail.jpg",
     import.meta.url
   ).href;
+  const beforeAndAfter1 = getBeforeAfterImagesFromFolder('projeto1')
+  
+  const imageUrls2 = getImagesFromFolder("projeto2");
+  const beforeAndAfter2 = getBeforeAfterImagesFromFolder('projeto2')
   const thumbnailUrl2 = new URL(
     "/src/assets/imgs/projeto2/thumbnail.jpg",
     import.meta.url
@@ -172,8 +175,8 @@ const Portfolio = () => {
             description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
             overlay
             images={imageUrls1}
-            antes={`/src/assets/imgs/projeto1/antes.jpg`}
-            depois={`/src/assets/imgs/projeto1/depois.jpg`}
+            antes={beforeAndAfter1.antes}
+            depois={beforeAndAfter1.depois}
           />
           <Card
             className="project_card"
@@ -189,8 +192,8 @@ const Portfolio = () => {
             description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
             overlay
             images={imageUrls2}
-            antes={`/src/assets/imgs/projeto2/antes.jpg`}
-            depois={`/src/assets/imgs/projeto2/depois.jpg`}
+            antes={beforeAndAfter2.antes}
+            depois={beforeAndAfter2.depois}
           />
         </CarouselNew>
       </Projects>

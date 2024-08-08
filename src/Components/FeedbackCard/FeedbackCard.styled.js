@@ -7,7 +7,7 @@ const StyledContainer = styled.div`
     height: 30rem;
     border: 1px solid black;
     border-radius: 3rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
     background-color: var(--off-white);
     display: grid;
