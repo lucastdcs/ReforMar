@@ -152,6 +152,7 @@ export const Overlay = styled.section`
         }
         @media (max-width:600px){
 
+
             grid-template-rows: auto ;
             img {
                 object-fit: contain;

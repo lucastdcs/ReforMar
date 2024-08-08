@@ -63,7 +63,7 @@ export const Label = styled(motion.a)`
   cursor: pointer;
   color: var(--off-white);
 
-  font-size: ${props => props.primary ? 'clamp(1.2rem, 1vw + 0.6rem, 2rem)' : 'clamp(0.6rem, 0.22vw + 0.6rem, 1.5rem)'}; /* Ajuste proporcional */
+  font-size: ${props => props.primary ? 'clamp(1.2rem, 1vw + 0.6rem, 2rem)' : 'clamp(1.3rem, 0.22vw + 0.6rem, 1.7rem)'}; /* Ajuste proporcional */
 `;
 
 export const LabelTitle = styled.h3`

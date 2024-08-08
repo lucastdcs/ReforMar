@@ -94,9 +94,9 @@ const StyledHeader = styled.header`
     }
   }
   @media (max-width: 1300px) {
-    .wrapper2 nav a {
+    /* .wrapper2 nav a {
       font-size: var(--font-size-label10);
-    }
+    } */
 
     #logo_pequeno {
       display: block;
