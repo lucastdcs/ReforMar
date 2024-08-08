@@ -9,8 +9,16 @@ import {
 } from "./Form.styled";
 import Button from "../Button/Button";
 import { Text } from "../../assets/styles/typography.styled";
+import EmailPopUp from "../EmailPopUp/EmailPopUp";
 
 const Form = () => {
+
+  const [isPopUpOpen, setIsPopUpOpen] = useState(false);
+
+  const togglePopUp = () => {
+    setIsPopUpOpen(!isPopUpOpen)
+  };
+
   const contactForm = useRef();
   const [formData, setFormData] = useState({
     user_name: "",
@@ -74,6 +82,7 @@ const Form = () => {
           message: "",
           files: null,
         });
+        togglePopUp()
       },
       (error) => {
         console.log("FAILED", error.text);
@@ -136,6 +145,7 @@ const Form = () => {
         </StyledArchive>
         <Button type="submit" texto="Enviar" value="send" />
       </StyledForm>
+      {isPopUpOpen && <EmailPopUp onClick={togglePopUp}/>}
     </>
   );
 };
