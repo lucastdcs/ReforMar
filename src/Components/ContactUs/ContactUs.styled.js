@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
+
 export const StyledSection = styled.section`
     width: 100vw;
-    background-color: var(--black);
     padding: 12rem 4vw;
-
-
     .form_wrapper{
         max-width: 132rem;
         margin: auto;

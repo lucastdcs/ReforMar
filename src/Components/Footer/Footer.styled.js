@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
+
+
 export const StyledContainer = styled.footer`
     width: 100vw;
-    background-color: var(--black);
+    /* background-color: var(--black); */
+
     padding-bottom: 6rem;
 
    ul li a {
@@ -61,7 +64,7 @@ export const Legal = styled.div`
     width: 100vw;
     /* display: flex;
     justify-content: space-between; */
-    background-color: var(--black);
+    /* background-color: var(--black); */
     padding: 2rem;
     text-align: center;
 

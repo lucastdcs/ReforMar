@@ -28,6 +28,8 @@ import YoutubeBlack from "./assets/icons/youtubeBlack.svg";
 import Menu from "./assets/icons/Nav-Menu.svg";
 import MenuBlack from "./assets/icons/Nav-MenuBlack.svg";
 import SobreNos from "./Pages/SobreNos.jsx";
+import bgTexture from "./assets/imgs/Texture_Footer.webp"
+
 
 const Layout = () => {
   const location = useLocation();
@@ -57,9 +59,15 @@ const Layout = () => {
   return (
     <>
       <Header {...getHeaderProps()} />
-        <Outlet />
-      {location.pathname === "/contato" ? <ContactUs isPage /> : <ContactUs />}
-      <Footer />
+      <Outlet />
+      <div style={{ background: `url(${bgTexture})`, backgroundAttachment: 'fixed', backgroundSize:'auto', backgroundRepeat: 'no-repeat'}}>
+        {location.pathname === "/contato" ? (
+          <ContactUs isPage />
+        ) : (
+          <ContactUs />
+        )}
+        <Footer />
+      </div>
     </>
   );
 };
