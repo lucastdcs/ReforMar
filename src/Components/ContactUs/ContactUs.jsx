@@ -13,7 +13,7 @@ const ContactUs = (props) => {
   const isPage = props.isPage;
 
   return (
-    <StyledSection style={isPage ? {paddingTop:'25rem'}: {padding:'10rem'}}>
+    <StyledSection style={isPage ? {paddingTop:'25rem'}: {paddingTop:'10rem'}}>
       <div className="form_wrapper">
         <div className="title_wrapper">
           {isPage ? (
