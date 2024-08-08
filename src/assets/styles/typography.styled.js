@@ -43,13 +43,13 @@ export const H6 = styled.h3`
 
 export const H7 = styled.h3`
   font-family: var(--font-family-grifter);
-  font-size: clamp(1.8rem, 0.8vw + 1rem, 2rem); /* Mínimo 1.8rem, ideal ajustável, máximo 2rem */
+  font-size: clamp(2rem, 0.8vw + 1rem, 2rem); /* Mínimo 1.8rem, ideal ajustável, máximo 2rem */
   line-height: var(--spacing-100);
 `;
 
 export const Text = styled.p`
   font-family: var(--font-family-helvetica);
-  font-size: clamp(1.2rem, 1vw + 0.2rem, 1.6rem); /* Mínimo 1.2rem, ideal ajustável, máximo 1.6rem */
+  font-size: clamp(1.6rem, 1vw + 0.2rem, 1.8rem); /* Mínimo 1.2rem, ideal ajustável, máximo 1.6rem */
   line-height: var(--spacing-200);
 `;
 
@@ -68,7 +68,7 @@ export const Label = styled(motion.a)`
 
 export const LabelTitle = styled.h3`
   font-family: var(--font-family-grifter);
-  font-size: clamp(1rem, 0.5vw + 0.6rem, 1.5rem); /* Mínimo 1rem, ideal ajustável, máximo 1.5rem */
+  font-size: clamp(1.5rem, 0.5vw + 0.6rem, 1.5rem); /* Mínimo 1rem, ideal ajustável, máximo 1.5rem */
   line-height: var(--spacing-160);
   text-transform: uppercase;
   letter-spacing: 0.4rem;

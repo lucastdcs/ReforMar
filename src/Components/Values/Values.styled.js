@@ -7,5 +7,10 @@ export const StyledContainer= styled.div`
     h3 {
         color: var(--color-tertiary);
         margin: 4% 0 6% 0;
+        text-shadow: 1px 1px 1px rgb(10, 51, 241, 0.2);
+    }
+
+    p {
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
     }
 `;
