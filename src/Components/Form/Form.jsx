@@ -70,8 +70,8 @@ const Form = () => {
       return;
     }
 
-    emailjs.sendForm('service_4wzmv46', 'template_el4yyi9', contactForm.current, {
-      publicKey: 'kpxzOM0J67_H5q5Fn',
+    emailjs.sendForm('service_i7sblbe', 'template_71w4paa', contactForm.current, {
+      publicKey: '8OU2nCiwIjNLgLtWq',
     }).then(
       () => {
         console.log('SUCCESS');
