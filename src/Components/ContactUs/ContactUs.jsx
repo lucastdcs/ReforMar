@@ -26,7 +26,7 @@ const ContactUs = (props) => {
               <Text>
                 <strong>Ou contate-nos</strong> <br />
                 <strong>Email:</strong> <br />
-                atendimento@reformarobrasexpress.com <br />
+                atendimento@reformarobrasexpress.com.br <br />
                 <strong>Telefones:</strong> <br />
                 (11) 93961-2000 <br />
                 (13) 98220-2000
