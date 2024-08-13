@@ -1,6 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-
 import {
   StyledForm,
   StyledInput,
@@ -12,18 +11,81 @@ import { Text } from "../../assets/styles/typography.styled";
 import EmailPopUp from "../EmailPopUp/EmailPopUp";
 
 const Form = () => {
+  const loadDriveApi = () => {
+    window.gapi.load('client:auth2', () => {
+      window.gapi.client
+        .init({
+          apiKey: 'AIzaSyAPLl9_ogmjds_G8PLuodF5-mgpz9ZSUnU',
+          clientId: '436762025269-59vh6vdankf1fn9aisvnb9da7v4q9ius.apps.googleusercontent.com',
+          discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'],
+          scope: 'https://www.googleapis.com/auth/drive.file',
+        })
+        .then(() => {
+          window.gapi.auth2.getAuthInstance().signIn();
+        })
+        .catch((error) => {
+          console.error('Erro ao carregar a API do Google Drive:', error);
+        });
+    });
+  };
+
+  useEffect(() => {
+    loadDriveApi();
+  }, []);
+
+  const uploadToDrive = async (file) => {
+    try {
+      const accessToken = window.gapi.auth2
+        .getAuthInstance()
+        .currentUser.get()
+        .getAuthResponse().access_token;
+
+      const form = new FormData();
+      form.append(
+        'metadata',
+        new Blob(
+          [JSON.stringify({ name: file.name, mimeType: file.type })],
+          { type: 'application/json' }
+        )
+      );
+      form.append('file', file);
+
+      const response = await fetch(
+        'https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart&fields=id',
+        {
+          method: 'POST',
+          headers: new Headers({
+            Authorization: 'Bearer ' + accessToken,
+          }),
+          body: form,
+        }
+      );
+
+      const result = await response.json();
+
+      if (result.id) {
+        return `https://drive.google.com/file/d/${result.id}/view?usp=sharing`;
+      } else {
+        console.error('Erro ao obter o ID do arquivo:', result);
+        return '';
+      }
+    } catch (error) {
+      console.error('Erro ao fazer upload para o Google Drive:', error);
+      return '';
+    }
+  };
 
   const [isPopUpOpen, setIsPopUpOpen] = useState(false);
 
   const togglePopUp = () => {
-    setIsPopUpOpen(!isPopUpOpen)
+    setIsPopUpOpen(!isPopUpOpen);
   };
 
   const contactForm = useRef();
   const [formData, setFormData] = useState({
-    user_name: "",
-    user_email: "",
-    message: "",
+    user_name: '',
+    user_email: '',
+    message: '',
     files: null,
   });
 
@@ -63,31 +125,43 @@ const Form = () => {
     return !Object.values(newErrors).some((error) => error);
   };
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
     if (!validateForm()) {
       return;
     }
 
-    emailjs.sendForm('service_i7sblbe', 'template_71w4paa', contactForm.current, {
-      publicKey: '8OU2nCiwIjNLgLtWq',
-    }).then(
-      () => {
-        console.log('SUCCESS');
-        // Limpar o formulário após o envio bem-sucedido
-        setFormData({
-          user_name: "",
-          user_email: "",
-          message: "",
-          files: null,
-        });
-        togglePopUp()
-      },
-      (error) => {
-        console.log("FAILED", error.text);
-      },
-    );
+    let fileLink = '';
+    if (formData.files) {
+      fileLink = await uploadToDrive(formData.files);
+    }
+
+    const emailParams = {
+      user_name: formData.user_name,
+      user_email: formData.user_email,
+      message: `${formData.message}\n\nLink para o arquivo: ${fileLink}`,
+    };
+
+    emailjs
+      .send('service_i7sblbe', 'template_71w4paa', emailParams, {
+        publicKey: '8OU2nCiwIjNLgLtWq',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS');
+          setFormData({
+            user_name: '',
+            user_email: '',
+            message: '',
+            files: null,
+          });
+          togglePopUp();
+        },
+        (error) => {
+          console.log('FAILED', error.text);
+        }
+      );
   };
 
   return (
@@ -101,7 +175,7 @@ const Form = () => {
           onChange={handleChange}
         />
         {errors.user_name && <Text>Por favor, preencha seu nome.</Text>}
-        
+
         <StyledInput
           placeholder="Seu E-mail"
           type="email"
@@ -110,8 +184,10 @@ const Form = () => {
           onChange={handleChange}
         />
         {errors.user_email && <Text>Por favor, preencha seu e-mail.</Text>}
-        {errors.user_email_invalid && <Text>Por favor, insira um e-mail válido.</Text>}
-        
+        {errors.user_email_invalid && (
+          <Text>Por favor, insira um e-mail válido.</Text>
+        )}
+
         <StyledTextArea
           placeholder="Qual a sua mensagem?"
           name="message"
@@ -119,7 +195,7 @@ const Form = () => {
           onChange={handleChange}
         />
         {errors.message && <Text>Por favor, preencha sua mensagem.</Text>}
-        
+
         <StyledArchive>
           <StyledInput
             placeholder="Anexar arquivo"
@@ -145,7 +221,7 @@ const Form = () => {
         </StyledArchive>
         <Button type="submit" texto="Enviar" value="send" />
       </StyledForm>
-      {isPopUpOpen && <EmailPopUp onClick={togglePopUp}/>}
+      {isPopUpOpen && <EmailPopUp onClick={togglePopUp} />}
     </>
   );
 };
