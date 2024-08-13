@@ -11,69 +11,7 @@ import { Text } from "../../assets/styles/typography.styled";
 import EmailPopUp from "../EmailPopUp/EmailPopUp";
 
 const Form = () => {
-  const loadDriveApi = () => {
-    window.gapi.load('client:auth2', () => {
-      window.gapi.client
-        .init({
-          apiKey: 'AIzaSyAPLl9_ogmjds_G8PLuodF5-mgpz9ZSUnU',
-          clientId: '436762025269-59vh6vdankf1fn9aisvnb9da7v4q9ius.apps.googleusercontent.com',
-          discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'],
-          scope: 'https://www.googleapis.com/auth/drive.file',
-        })
-        .then(() => {
-          window.gapi.auth2.getAuthInstance().signIn();
-        })
-        .catch((error) => {
-          console.error('Erro ao carregar a API do Google Drive:', error);
-        });
-    });
-  };
 
-  useEffect(() => {
-    loadDriveApi();
-  }, []);
-
-  const uploadToDrive = async (file) => {
-    try {
-      const accessToken = window.gapi.auth2
-        .getAuthInstance()
-        .currentUser.get()
-        .getAuthResponse().access_token;
-
-      const form = new FormData();
-      form.append(
-        'metadata',
-        new Blob(
-          [JSON.stringify({ name: file.name, mimeType: file.type })],
-          { type: 'application/json' }
-        )
-      );
-      form.append('file', file);
-
-      const response = await fetch(
-        'https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart&fields=id',
-        {
-          method: 'POST',
-          headers: new Headers({
-            Authorization: 'Bearer ' + accessToken,
-          }),
-          body: form,
-        }
-      );
-
-      const result = await response.json();
-
-      if (result.id) {
-        return `https://drive.google.com/file/d/${result.id}/view?usp=sharing`;
-      } else {
-        console.error('Erro ao obter o ID do arquivo:', result);
-        return '';
-      }
-    } catch (error) {
-      console.error('Erro ao fazer upload para o Google Drive:', error);
-      return '';
-    }
-  };
 
   const [isPopUpOpen, setIsPopUpOpen] = useState(false);
 
@@ -140,7 +78,7 @@ const Form = () => {
     const emailParams = {
       user_name: formData.user_name,
       user_email: formData.user_email,
-      message: `${formData.message}\n\nLink para o arquivo: ${fileLink}`,
+      message: formData.message,
     };
 
     emailjs

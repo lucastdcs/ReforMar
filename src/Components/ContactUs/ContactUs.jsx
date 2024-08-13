@@ -20,7 +20,7 @@ const ContactUs = (props) => {
             <>
               <Titles
                 text_label="contate-nos"
-                text_title="Escreva sua mensagem ao lado"
+                text_title="Vamos entender seu projeto"
                 text_span=""
               />
               <Text>
