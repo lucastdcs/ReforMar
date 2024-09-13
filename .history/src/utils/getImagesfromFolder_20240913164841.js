@@ -1,5 +1,5 @@
-export const getImagesFromFolder = (folderName, amount) => {
-  const imageCount = amount; // Atualize conforme o número de imagens em cada pasta
+export const getImagesFromFolder = (folderName, ) => {
+  const imageCount = 5; // Atualize conforme o número de imagens em cada pasta
   const images = [];
 
   for (let i = 1; i <= imageCount; i++) {

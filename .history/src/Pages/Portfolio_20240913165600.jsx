@@ -229,7 +229,7 @@ const Portfolio = () => {
           <Card
             className="project_card"
             img={thumbnailUrl4}
-            title="Cozinha"
+            title="Varanda"
             feedbackStars="4"
             rating={4}
             duration="1 Semana"

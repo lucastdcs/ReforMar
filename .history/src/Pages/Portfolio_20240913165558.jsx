@@ -143,7 +143,7 @@ const Portfolio = () => {
 
   const imageUrls4 = getImagesFromFolder("projeto4", 3);
   const beforeAndAfter4 = getBeforeAfterImagesFromFolder('projeto4')
-  const thumbnailUrl4 = new URL(
+  const thumbnailUrl3 = new URL(
     "/src/assets/imgs/projeto4/thumbnail.jpg",
     import.meta.url
   ).href;
@@ -229,7 +229,7 @@ const Portfolio = () => {
           <Card
             className="project_card"
             img={thumbnailUrl4}
-            title="Cozinha"
+            title="Varanda"
             feedbackStars="4"
             rating={4}
             duration="1 Semana"

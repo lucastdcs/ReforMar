@@ -120,31 +120,24 @@ const Portfolio = () => {
     }
   `;
 
-  const imageUrls1 = getImagesFromFolder("projeto1", 5);
+  const imageUrls1 = getImagesFromFolder("projeto1");
   const thumbnailUrl1 = new URL(
     "/src/assets/imgs/projeto1/thumbnail.jpg",
     import.meta.url
   ).href;
   const beforeAndAfter1 = getBeforeAfterImagesFromFolder('projeto1')
   
-  const imageUrls2 = getImagesFromFolder("projeto2", 5);
+  const imageUrls2 = getImagesFromFolder("projeto2");
   const beforeAndAfter2 = getBeforeAfterImagesFromFolder('projeto2')
   const thumbnailUrl2 = new URL(
     "/src/assets/imgs/projeto2/thumbnail.jpg",
     import.meta.url
   ).href;
 
-  const imageUrls3 = getImagesFromFolder("projeto3", 3);
+  const imageUrls3 = getImagesFromFolder("projeto3");
   const beforeAndAfter3 = getBeforeAfterImagesFromFolder('projeto3')
   const thumbnailUrl3 = new URL(
     "/src/assets/imgs/projeto3/thumbnail.jpg",
-    import.meta.url
-  ).href;
-
-  const imageUrls4 = getImagesFromFolder("projeto4", 3);
-  const beforeAndAfter4 = getBeforeAfterImagesFromFolder('projeto4')
-  const thumbnailUrl4 = new URL(
-    "/src/assets/imgs/projeto4/thumbnail.jpg",
     import.meta.url
   ).href;
 
@@ -212,7 +205,7 @@ const Portfolio = () => {
           <Card
             className="project_card"
             img={thumbnailUrl3}
-            title="Varanda"
+            title="Banheiro em mármore e ripado"
             feedbackStars="4"
             rating={4}
             duration="1 Semana"
@@ -225,23 +218,6 @@ const Portfolio = () => {
             images={imageUrls3}
             antes={beforeAndAfter3.antes}
             depois={beforeAndAfter3.depois}
-          />
-          <Card
-            className="project_card"
-            img={thumbnailUrl4}
-            title="Cozinha"
-            feedbackStars="4"
-            rating={4}
-            duration="1 Semana"
-            year="2023"
-            area="30m²"
-            type="Residência"
-            location="Santos - SP"
-            description="Reforma de paredes, pisos, instalações de lustres e superfícies de mármore"
-            overlay
-            images={imageUrls4}
-            antes={beforeAndAfter4.antes}
-            depois={beforeAndAfter4.depois}
           />
         </CarouselNew>
       </Projects>
