@@ -36,7 +36,6 @@ export const StyledCard = styled.div`
             'text1 text2 button';
         margin-left: 4rem;
         margin-top: 2rem;
-        grid-column-gap: 1rem;
     }
 
     .title {
@@ -47,6 +46,7 @@ export const StyledCard = styled.div`
     }
     .texto2 {
         grid-area: text2;
+        margin-left: 0.4rem;
     }
     .btn {
         grid-area: button;

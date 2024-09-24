@@ -126,7 +126,7 @@ export const Overlay = styled.section`
             height: 100%;
             max-height:70vh;
             border-radius: 2rem;
-            object-fit: cover;
+            object-fit: contain;
         }
 
         ._img1{

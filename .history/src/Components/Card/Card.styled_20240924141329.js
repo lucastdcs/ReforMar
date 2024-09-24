@@ -36,7 +36,7 @@ export const StyledCard = styled.div`
             'text1 text2 button';
         margin-left: 4rem;
         margin-top: 2rem;
-        grid-column-gap: 1rem;
+        grid-column-gap: 0.5rem;
     }
 
     .title {

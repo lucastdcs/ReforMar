@@ -36,11 +36,11 @@ export const StyledCard = styled.div`
             'text1 text2 button';
         margin-left: 4rem;
         margin-top: 2rem;
-        grid-column-gap: 1rem;
     }
 
     .title {
         grid-area: title;
+        margin-left: 0%.5rem;
     }
     .texto1 {
         grid-area: text1;
