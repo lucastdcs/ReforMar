@@ -33,7 +33,7 @@ const Header = (props) => {
           <a href="https://www.youtube.com/@reformarobrasexpress">
             <img src={props.youtubeIcon} alt="Logo do Youtube" />
           </a>
-          <a href="https://wa.me/5511939612000">
+          <a href="">
             <img src={props.whatsappIcon} alt="Logo do Whatsapp" />
           </a>
         </span>

@@ -18,7 +18,7 @@ export const StyledServicesCard = styled.div`
    }
 
    h3{
-    color: white;
+    color: var(--color-tertiary);
     margin: 4rem 0;
    }
 

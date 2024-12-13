@@ -3,7 +3,7 @@ export const getImagesFromFolder = (folderName, amount) => {
   const images = [];
 
   for (let i = 1; i <= imageCount; i++) {
-    images.push(new URL(`/src/assets/imgs/${folderName}/image${i}.jpg`, import.meta.url).href);
+    images.push(new URL(`/src/assets/imgs/${folderName}/image${i}.{}`, import.meta.url).href);
   }
 
   return images;

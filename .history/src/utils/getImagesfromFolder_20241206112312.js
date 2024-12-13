@@ -1,3 +1,5 @@
+const allowedExtensions = ['.jpg', '.png', '.jfif', '.jpeg', '.webp'];
+
 export const getImagesFromFolder = (folderName, amount) => {
   const imageCount = amount;
   const images = [];

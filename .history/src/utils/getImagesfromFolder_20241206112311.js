@@ -1,3 +1,5 @@
+
+
 export const getImagesFromFolder = (folderName, amount) => {
   const imageCount = amount;
   const images = [];

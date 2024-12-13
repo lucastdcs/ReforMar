@@ -36,9 +36,8 @@ const ContactUs = (props) => {
             <>
               <Titles
                 text_label="contate-nos"
-                text_title="Preparado para transformar sua casa no seu lar?
-                "
-                text_span=""
+                text_title="Preparado para transformar sua casa no"
+                text_span="seu lar?"
               />
               <Text>
                 Escreva ao lado uma mensagem <br /> para nós e entraremos em

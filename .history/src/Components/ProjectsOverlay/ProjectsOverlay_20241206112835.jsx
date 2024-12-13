@@ -6,6 +6,7 @@ import Card from "../Card/Card.jsx";
 import Button from "../Button/Button.jsx";
 import { LabelTitle, H4, Text } from "../../assets/styles/typography.styled.js";
 import CardExample from "../../assets/imgs/CardExample.png";
+import CarouselNew from "../MotionCarousel/MotionCarousel.jsx";
 import ReactDOM from 'react-dom';
 
 const ProjectsOverlay = (props) => {
@@ -55,10 +56,11 @@ const ProjectsOverlay = (props) => {
           <LabelTitle>desafio e escopo:</LabelTitle>
           <Text>{props.description}</Text>
         </div>
-        <Titles text_label="" text_title="Preview" text_span="" />
+        <Titles text_label="" text_title="Antes & Depois" text_span="" />
         <div className="preview">
-
-            <img src={props.img} alt="" />
+          <CarouselNew>
+            <img src={props.antes} alt="" />
+            <img src={props.depois} alt="" />
 
         </div>
 

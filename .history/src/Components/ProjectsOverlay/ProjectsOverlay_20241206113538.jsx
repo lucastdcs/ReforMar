@@ -6,6 +6,7 @@ import Card from "../Card/Card.jsx";
 import Button from "../Button/Button.jsx";
 import { LabelTitle, H4, Text } from "../../assets/styles/typography.styled.js";
 import CardExample from "../../assets/imgs/CardExample.png";
+import CarouselNew from "../MotionCarousel/MotionCarousel.jsx";
 import ReactDOM from 'react-dom';
 
 const ProjectsOverlay = (props) => {
