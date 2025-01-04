@@ -10,7 +10,17 @@ export const getImagesFromFolder = (folderName, amount) => {
 };
 
 export const getMainImagesFromFolder = (folderName) => {
-  const thumbnail = new URL(`/src/assets/imgs/${folderName}/thumbnail.jpg`, import.meta.url).href;
+  // const thumbnail = new URL(`/src/assets/imgs/${folderName}/thumbnail.jpg`, import.meta.url).href;
+
+  let thumbnail;
+
+  try {
+    // Tenta acessar o thumbnail
+    thumbnail = new URL(`/src/assets/imgs/${folderName}/thumbnail.jpg`, import.meta.url).href;
+  } catch {
+    // Se não existir, usa image1
+    thumbnail = new URL(`/src/assets/imgs/${folderName}/image1.jpg`, import.meta.url).href;
+  }
 
   return {
     thumbnail: thumbnail

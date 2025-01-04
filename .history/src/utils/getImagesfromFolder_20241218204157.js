@@ -13,6 +13,8 @@ export const getMainImagesFromFolder = (folderName) => {
   const thumbnail = new URL(`/src/assets/imgs/${folderName}/thumbnail.jpg`, import.meta.url).href;
 
   return {
+    antes: beforeImageUrl,
+    depois: afterImageUrl,
     thumbnail: thumbnail
   };
 };

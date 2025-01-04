@@ -15,7 +15,6 @@ import Inicio from "./Pages/Início.jsx";
 import Servicos from "./Pages/Servicos.jsx";
 import Portfolio from "./Pages/Portfolio.jsx";
 import Contact from "./Pages/Contact.jsx";
-import { WhatsappButton } from "./Components/WhatsappButton/WhatsappButton.jsx";
 
 // Imagens e ícones
 import Logo from "./assets/icons/Logotipo.svg";
@@ -69,7 +68,7 @@ const Layout = () => {
         )}
         <Footer />
       </div>
-      <WhatsappButton />
+      
     </>
   );
 };
